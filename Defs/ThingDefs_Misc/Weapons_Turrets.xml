@@ -121,7 +121,58 @@
   </ThingDef>
 
 
-
+	
+	<ThingDef ParentName="BaseAutoTurretGun">
+		<defName>Gun_Servitor</defName>
+		<label>Servitor</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/servitor_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<!-- <menuHidden>True</menuHidden> -->
+		<description>-------------</description>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<tradeability>None</tradeability>
+		<statBases>
+			 <MarketValue>2500</MarketValue>
+            <SightsEfficiency>1</SightsEfficiency>
+            <ShotSpread>0.1</ShotSpread>
+            <SwayFactor>0.5</SwayFactor>
+            <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+            <Bulk>19</Bulk>
+            <Mass>70.5</Mass>
+		</statBases>
+		<verbs>
+			  <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.35</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
+                <warmupTime>1.7</warmupTime>
+                <range>45</range>
+				<targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <burstShotCount>10</burstShotCount>
+                <soundCast>ShotAK47</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+		</verbs>
+		<comps>
+			  <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>5</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>400</magazineSize>
+                <reloadTime>10.5</reloadTime>
+                <ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+            </li>
+		</comps>
+	</ThingDef>
 
 
 </Defs>

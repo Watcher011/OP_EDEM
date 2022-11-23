@@ -193,4 +193,48 @@
   
 
   
+
+<ThingDef ParentName="TurretBase">
+		<defName>Turret_Servitor</defName>
+		<label>sentry servitor turret</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/ServitorTurret_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(0.27,0.25,0.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Turrets/servitor_Top</uiIconPath>
+		<statBases>
+	    	<MaxHitPoints>1000</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>2100</WorkToBuild>
+			<Mass>140</Mass>
+			<Bulk>120</Bulk>
+		</statBases>
+		<size>(2,2)</size>
+		<comps>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<description>-----</description>
+		<costList>
+			<ServitorPak>1</ServitorPak>
+		</costList>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<ai_combatDangerous>false</ai_combatDangerous>
+			<turretGunDef>Gun_Servitor</turretGunDef>
+			<turretTopDrawSize>2</turretTopDrawSize>
+		</building>
+		<designationHotKey>Misc1</designationHotKey>
+
+		<minifiedDef>MinifiedTurretGun</minifiedDef>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+	</ThingDef>
 </Defs>
