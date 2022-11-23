@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============= Firefighter ============= -->
+
+
+  <WorkGiverDef>
+    <defName>DoBillsSmelter</defName>
+    <label>smelt items</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>80</priorityInType>
+    <fixedBillGiverDefs>
+      <li>ElectricSmelter</li>
+	  <li>ElectricYadaritSmelter</li>
+    </fixedBillGiverDefs>
+    <verb>refine</verb>
+    <gerund>refining at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+  <!-- ============= Hauling ============= -->
+
+</Defs>

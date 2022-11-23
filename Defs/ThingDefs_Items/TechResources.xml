@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<Defs>
+
+<ThingDef ParentName="ResourceBase">
+    <defName>Yadarit</defName>
+        <label>Yadarit</label>
+    <description>Yadarite is a mysterious substance that has mystical properties and high scientific value.</description>
+    <graphicData>
+      <texPath>Things/Item/yadarit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(0.7)</drawSize>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      	<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>350</MarketValue>
+			<DeteriorationRate>0.02</DeteriorationRate>
+			<Flammability>5</Flammability>
+			<Mass>3.1</Mass>
+			<Bulk>0.1</Bulk>
+    </statBases>
+	<tickerType>Normal</tickerType>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <tradeability>Sellable</tradeability>
+		<techLevel>Spacer</techLevel>
+	<comps>
+			 <li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(255,135,160,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>0.2</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.05</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<wickTicks>
+					<min>215</min>
+					<max>440</max>
+				</wickTicks>
+			</li>
+		</comps>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+
+ <ThingDef ParentName="ResourceBase">
+		 <defName>yadaritRaW</defName>
+        <label>yadaritrRaW</label>
+		  <description>Yadarite is a mysterious substance that has mystical properties and high scientific value 1.</description>
+        <graphicData>
+            <texPath>Things/Item/yadaritRaW</texPath>
+		    <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<fillPercent>0.35</fillPercent>
+		<stackLimit>100</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>50</MarketValue>
+			<DeteriorationRate>0.02</DeteriorationRate>
+			<Flammability>1</Flammability>
+			<Mass>3.1</Mass>
+			<Bulk>0.1</Bulk>
+		</statBases>
+		<ingestible>
+			<foodType>Fluid, Processed, Liquor, VegetableOrFruit</foodType>
+			<preferability>DesperateOnly</preferability>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+		</ingestible>
+		<tickerType>Rare</tickerType>
+		<comps>
+			 <li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(255,135,160,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Lifespan">
+				<lifespanTicks>1260000</lifespanTicks>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.2</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.05</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<wickTicks>
+					<min>215</min>
+					<max>440</max>
+				</wickTicks>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+		<deepCommonality>1</deepCommonality>
+		<deepCountPerCell>1000</deepCountPerCell>
+		<deepCountPerPortion>15</deepCountPerPortion>
+		<deepLumpSizeRange>
+			<min>5</min>
+			<max>35</max>
+		</deepLumpSizeRange>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+	</ThingDef>
+	
+	
+	
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>ServitorPak</defName>
+		<label>ServitorPak</label>
+		<description>-/--/-.</description>
+		<graphicData>
+			<texPath>Things/Building/Turrets/ServitorPak</texPath>
+		    <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.5,2.3)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<size>(1,2)</size>
+		<fillPercent>0.35</fillPercent>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<MarketValue>350</MarketValue>
+			<DeteriorationRate>0.32</DeteriorationRate>
+			<Flammability>5</Flammability>
+			<Mass>60.1</Mass>
+			<Bulk>4.1</Bulk>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			 <li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(255,100,100,0)</glowColor>
+			</li>
+		</comps>
+		<thingCategories>
+			 <li>WeaponsRanged</li>
+		</thingCategories>
+	</ThingDef>
+ 
+</Defs>

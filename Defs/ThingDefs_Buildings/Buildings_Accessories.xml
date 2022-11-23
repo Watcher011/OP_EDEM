@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="LampBase">
+		<defName>YadaritLamp</defName>
+		<label>Yadarit lamp</label>
+		<description>Yadarit lamp. Free source of light.</description>
+		
+		<graphicData>
+			<texPath>Things/Building/Furniture/Lights/YadaritFL</texPath>
+				<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(0.8,1.2)</drawSize>
+			<shadowData>
+				<volume>(0.2, 0.1, 0.2)</volume>
+			</shadowData>
+		</graphicData>
+		<fillPercent>0.5</fillPercent>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<rotatable>false</rotatable>
+		<pathCost>50</pathCost>
+		<tickerType>Normal</tickerType>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<costList>
+			<yadaritRaW>20</yadaritRaW>
+		</costList>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<statBases>
+			<Beauty>12</Beauty>
+			<WorkToBuild>610</WorkToBuild>
+			<Bulk>12</Bulk>
+			<Mass>4</Mass>
+			<Cleanliness>3</Cleanliness>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">6</StyleDominance>
+		</statBases>
+		<specialDisplayRadius>8</specialDisplayRadius>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			 <li Class="CompProperties_Glower">
+        <overlightRadius>8.0</overlightRadius>
+        <glowRadius>8.0</glowRadius>
+       <glowColor>(255,255,233,1)</glowColor>
+      </li>
+		</comps>
+		<building>
+			<uninstallWork>300</uninstallWork>
+		</building>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		 <researchPrerequisites>
+	    <li>EDEM</li>
+    </researchPrerequisites>
+	</ThingDef>
+
+
+<ThingDef ParentName="LampBase">
+		<defName>YadaritLamp2</defName>
+		<label>Yadarit lamp2</label>
+		<description>Yadarit lamp. Free source of light.</description>
+		
+		<graphicData>
+			<texPath>Things/Building/Furniture/Lights/YAD</texPath>
+				<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1.5,1.5)</drawSize>
+			<shadowData>
+				<volume>(0.2, 0.1, 0.2)</volume>
+			</shadowData>
+		</graphicData>
+		<fillPercent>0.5</fillPercent>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<rotatable>false</rotatable>
+		<pathCost>50</pathCost>
+		<tickerType>Normal</tickerType>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<costList>
+			<yadaritRaW>20</yadaritRaW>
+		</costList>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<statBases>
+			<Beauty>12</Beauty>
+			<WorkToBuild>610</WorkToBuild>
+			<Bulk>12</Bulk>
+			<Mass>4</Mass>
+			<Cleanliness>3</Cleanliness>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">6</StyleDominance>
+		</statBases>
+		<specialDisplayRadius>8</specialDisplayRadius>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			 <li Class="CompProperties_Glower">
+        <overlightRadius>4.0</overlightRadius>
+        <glowRadius>4.0</glowRadius>
+       <glowColor>(255,255,233,1)</glowColor>
+      </li>
+		</comps>
+		<building>
+			<uninstallWork>300</uninstallWork>
+		</building>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		 <researchPrerequisites>
+	    <li>EDEM</li>
+    </researchPrerequisites>
+	</ThingDef>
+
+
+
+
+
+<ThingDef ParentName="LampBase">
+    <defName>SunLedLamp</defName>
+    <label>sun Led lamp</label>
+    <description>An industrial lamp which lights an area brightly enough to grow crops, but consumes a huge amount of power. Automatically turns itself off at night.</description>
+    <thingClass>Building_SunLamp</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Lights/BildingLamp_on</texPath>
+	   <drawSize>(1,0.9)</drawSize>
+    </graphicData>
+    <blockWind>true</blockWind>
+    <tickerType>Rare</tickerType>
+    <statBases>
+      <WorkToBuild>330</WorkToBuild>
+      <Mass>4.5</Mass>
+    </statBases>
+    <costList>
+	  <yadaritRaW>10</yadaritRaW>
+      <Steel>40</Steel>
+    </costList>
+    <uiOrder>2995</uiOrder>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <overlightRadius>5.0</overlightRadius>
+        <glowRadius>5</glowRadius>
+        <glowColor>(370,370,370,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>300</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>3</heatPerSecond>
+      </li>
+    </comps>
+    <!-- Determined by trial and error
+    This value isn't perfect because these radii use different algorithms
+    but it matches in this case-->
+    <specialDisplayRadius>5</specialDisplayRadius>
+	 <researchPrerequisites>
+      <li>Electricity</li>
+	    <li>EDEM</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>

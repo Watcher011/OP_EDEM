@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <ThingDef Name="BaseTurretGun" ParentName="BaseGun" Abstract="True">
+    <statBases>
+      <Mass>1</Mass>
+    </statBases>
+    <relicChance>0</relicChance>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponTags>
+      <li>Gun</li>
+      <li>TurretGun</li>
+    </weaponTags>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>True</destroyOnDrop>
+    <generateAllowChance>0</generateAllowChance>
+    <smeltable>false</smeltable>
+    <modExtensions>
+      <li Class="CombatExtended.ThingDefExtensionCE">
+        <MenuHidden>True</MenuHidden>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef Name="BaseAutoTurretGun" ParentName="BaseTurretGun" Abstract="True">
+    <comps>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>AimedShot</aiAimMode>
+        <noSnapshot>true</noSnapshot>
+        <noSingleShot>true</noSingleShot>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- ================== Blaster Turret ================== -->
+
+  <ThingDef ParentName="BaseAutoTurretGun">
+    <defName>Gun_DrobTurret</defName>
+    <label>Drob turret gun</label>
+    <graphicData>
+      <texPath>Things/Building/Turrets/Drob_Top</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <description>Shutgun attached to a turret mount.</description>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <SightsEfficiency>1</SightsEfficiency>
+      <ShotSpread>0.06</ShotSpread>
+      <SwayFactor>0.86</SwayFactor>
+      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+      <NightVisionEfficiency_Weapon>0.5</NightVisionEfficiency_Weapon>
+      <Mass>10</Mass>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>0.90</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+        <warmupTime>1.3</warmupTime>
+        <range>55</range>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <burstShotCount>10</burstShotCount>
+        <soundCast>Shot_ChargeBlaster</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <recoilPattern>Mounted</recoilPattern>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>100</magazineSize>
+        <reloadTime>7.8</reloadTime>
+        <ammoSet>AmmoSet_12Gauge</ammoSet>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- ================== Heavy Turret ================== -->
+<ThingDef ParentName="BaseAutoTurretGun">
+    <defName>Gun_ToxicSplinker</defName>
+    <label>Toxic turret gun</label>
+    <graphicData>
+      <texPath>Things/Building/Turrets/Toxic_Top</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <description>Toxic attached to a turret mount.</description>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <SightsEfficiency>1</SightsEfficiency>
+      <ShotSpread>0.06</ShotSpread>
+      <SwayFactor>0.86</SwayFactor>
+      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+      <NightVisionEfficiency_Weapon>0.5</NightVisionEfficiency_Weapon>
+      <Mass>10</Mass>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>0.90</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Toxic_Sabot</defaultProjectile>
+        <warmupTime>3.3</warmupTime>
+        <range>35</range>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <burstShotCount>5</burstShotCount>
+        <soundCast>Shot_ChargeBlaster</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <recoilPattern>Mounted</recoilPattern>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>100</magazineSize>
+        <reloadTime>7.8</reloadTime>
+        <ammoSet>AmmoSet_Toxic</ammoSet>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+
+
+
+</Defs>

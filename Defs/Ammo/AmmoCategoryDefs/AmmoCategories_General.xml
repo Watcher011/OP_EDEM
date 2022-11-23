@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Toxic</defName>
+    <label>Toxic</label>
+    <labelShort>ToX</labelShort>
+    <description>-/--/-/-</description>
+  </CombatExtended.AmmoCategoryDef>
+
+ 
+</Defs>

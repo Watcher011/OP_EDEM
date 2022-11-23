@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Blaster Turret -->
+
+  <Gun_DrobTurret.label>Автоматичиский дробовик</Gun_DrobTurret.label>
+  <Gun_DrobTurret.description>Дробовик установленный на поворотную туррель.</Gun_DrobTurret.description>
+
+
+  <!-- Heavy Turret -->
+
+  <Gun_ToxicSplinker.label>Токсикомёт</Gun_ToxicSplinker.label>
+  <Gun_ToxicSplinker.description>Автоматичиская турель снаряженная токсичными отходами колонии.</Gun_ToxicSplinker.description>
+
+
+</LanguageData>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeToxinAmmo.label>Сделать токсичный картридж x x100</MakeToxinAmmo.label>
+  <MakeToxinAmmo.description>Создаёт 100 токсичных снарядов.</MakeToxinAmmo.description>
+  <MakeToxinAmmo.jobString>Создаёт токсичный снаряд.</MakeToxinAmmo.jobString>
+
+
+  <!--<MakeAmmo_Toxic.label>Сделать токсичный картридж x200</MakeAmmo_Toxic.label>-->
+  <!--<MakeAmmo_Toxic.description>Создаёт 200 токсичных снарядов.</MakeAmmo_Toxic.description>-->
+  <!--<MakeAmmo_Toxic.jobString>Создаёт токсичный снаряд.</MakeAmmo_Toxic.jobString>-->
+
+</LanguageData>

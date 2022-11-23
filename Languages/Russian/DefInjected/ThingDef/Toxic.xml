@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_Toxic_Sabot.label>Обойма токсинов (Sabot)</Ammo_Toxic_Sabot.label>
+  <Ammo_Toxic_Sabot.description>Набор токсичных снарядов.</Ammo_Toxic_Sabot.description>
+
+
+  <!-- Projectile -->
+
+  <Bullet_Toxic_Sabot.label>Токсичный плевок (Sabot)</Bullet_Toxic_Sabot.label>
+
+
+</LanguageData>

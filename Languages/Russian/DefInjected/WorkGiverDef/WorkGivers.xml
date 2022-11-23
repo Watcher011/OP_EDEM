@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Firefighter -->
+
+  <DoBillsSmelter.label>выплавляемые предметы</DoBillsSmelter.label>
+  <DoBillsSmelter.verb>улучшать</DoBillsSmelter.verb>
+  <DoBillsSmelter.gerund>переработка на</DoBillsSmelter.gerund>
+
+
+</LanguageData>
