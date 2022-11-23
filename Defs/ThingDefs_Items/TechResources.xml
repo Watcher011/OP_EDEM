@@ -11,6 +11,7 @@
       <texPath>Things/Item/yadarit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>(0.7)</drawSize>
+	  <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
     <soundInteract>Metal_Drop</soundInteract>
@@ -29,7 +30,7 @@
     <thingCategories>
       <li>ItemsMisc</li>
     </thingCategories>
-    <drawGUIOverlay>false</drawGUIOverlay>
+    <drawGUIOverlay>true</drawGUIOverlay>
     <tradeability>Sellable</tradeability>
 		<techLevel>Spacer</techLevel>
 	<comps>
@@ -75,12 +76,7 @@
 			<Mass>3.1</Mass>
 			<Bulk>0.1</Bulk>
 		</statBases>
-		<ingestible>
-			<foodType>Fluid, Processed, Liquor, VegetableOrFruit</foodType>
-			<preferability>DesperateOnly</preferability>
-			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-		</ingestible>
-		<tickerType>Rare</tickerType>
+		<tickerType>Normal</tickerType>
 		<comps>
 			 <li Class="CompProperties_Glower">
 				<glowRadius>2</glowRadius>

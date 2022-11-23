@@ -97,6 +97,10 @@
         <li>AllowCorpsesStranger</li>
       </specialFiltersToAllow>
     </defaultIngredientFilter>
+	  <researchPrerequisites>
+      <li>Electricity</li>
+	    <li>EDEM</li>
+    </researchPrerequisites>
   </RecipeDef>
 
 </Defs>

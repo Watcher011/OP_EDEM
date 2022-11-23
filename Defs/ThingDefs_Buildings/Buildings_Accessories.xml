@@ -57,8 +57,8 @@
 
 
 <ThingDef ParentName="LampBase">
-		<defName>YadaritLamp2</defName>
-		<label>Yadarit lamp2</label>
+		<defName>YadaritLamp2A</defName>
+		<label>Yadarit lamp2A</label>
 		<description>Yadarit lamp. Free source of light.</description>
 		
 		<graphicData>
