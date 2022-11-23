@@ -35,34 +35,68 @@
     </fixedIngredientFilter>
   </RecipeDef>
 
- <RecipeDef ParentName="LightMechanoidRecipe">
-    <defName>Servitor</defName>
-    <label>Servitor fabricor</label>
-    <description>Gestate a fabricor mechanoid.</description>
-    <researchPrerequisite>HighMechtech</researchPrerequisite>
-    <ingredients Inherit="False">
+	<RecipeDef ParentName="GrenadeRecipeBase">
+    <defName>MakeServitorKit</defName>
+    <label>make servitor kit x1</label>
+    <description>Craft Servitorkit.</description>
+    <jobString>MakingServitorkit.</jobString>
+    <researchPrerequisite>Machining</researchPrerequisite>
+    <workAmount>3600</workAmount>
+    <ingredients>
       <li>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+	   <li>
+        <filter>
+          <thingDefs>
+            <li>yadaritRaW</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+	   <li>
+        <filter>
+          <categories>
+            <li>Drugs</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
         <filter>
           <thingDefs>
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>100</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>SubcoreHigh</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
+        <count>10</count>
       </li>
     </ingredients>
-    <products>
-      <ServitorPak>1</ServitorPak>
-    </products>
-    <descriptionHyperlinks>
-      <ThingDef>ServitorPak</ThingDef>
-    </descriptionHyperlinks>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Corpses</li>
+		<li>Drugs</li>
+      </categories>
+      <disallowedCategories>
+        <li>CorpsesMechanoid</li>
+      </disallowedCategories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>Corpse_Human</li>
+		 <li>yadaritRaW</li>
+		  <li>Steel</li>
+      </thingDefs>
+      <specialFiltersToAllow>
+        <li>AllowCorpsesColonist</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">AllowCorpsesSlave</li>
+        <li>AllowCorpsesStranger</li>
+      </specialFiltersToAllow>
+    </defaultIngredientFilter>
   </RecipeDef>
+
 </Defs>
