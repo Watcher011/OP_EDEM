@@ -35,56 +35,34 @@
     </fixedIngredientFilter>
   </RecipeDef>
 
- 
-
-  <RecipeDef>
-  <defName>MakeServitorKit</defName>
-		<label>MakeServitorKit</label>
-		<description>MakeServitorKit. Produces 1.</description>
-    <jobString>MakeServitorKit.</jobString>
-    <workAmount>400</workAmount>
-    <workSpeedStat>SmeltingSpeed</workSpeedStat>
-    <effectWorking>Smelt</effectWorking>
-    <soundWorking>Recipe_Smelt</soundWorking>
-    <ingredients>
-       <li>
+ <RecipeDef ParentName="LightMechanoidRecipe">
+    <defName>Servitor</defName>
+    <label>Servitor fabricor</label>
+    <description>Gestate a fabricor mechanoid.</description>
+    <researchPrerequisite>HighMechtech</researchPrerequisite>
+    <ingredients Inherit="False">
+      <li>
         <filter>
-          <categories>
-            <li>Corpses</li>
-          </categories>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
         </filter>
         <count>1</count>
       </li>
     </ingredients>
-    <!-- Switched to standard products so we can do "do until you have X"
-    <specialProducts>
-      <li>Smelted</li>
-    </specialProducts>-->
     <products>
-     <ServitorPak>1</ServitorPak>
+      <ServitorPak>1</ServitorPak>
     </products>
-	 <fixedIngredientFilter>
-      <categories>
-        <li>Corpses</li>
-      </categories>
-      <disallowedCategories>
-        <li>CorpsesMechanoid</li>
-      </disallowedCategories>
-    </fixedIngredientFilter>
-	   <defaultIngredientFilter>
-      <thingDefs>
-        <li>Corpse_Human</li>
-      </thingDefs>
-      <specialFiltersToAllow>
-        <li>AllowCorpsesColonist</li>
-        <li MayRequire="Ludeon.RimWorld.Ideology">AllowCorpsesSlave</li>
-        <li>AllowCorpsesStranger</li>
-      </specialFiltersToAllow>
-    </defaultIngredientFilter>
+    <descriptionHyperlinks>
+      <ThingDef>ServitorPak</ThingDef>
+    </descriptionHyperlinks>
   </RecipeDef>
-
-
-
-
-
 </Defs>
