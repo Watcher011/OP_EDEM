@@ -46,7 +46,7 @@
 		<designationCategory>Misc</designationCategory>
 		<repairEffect>ConstructMetal</repairEffect>
 	</ThingDef>	
-	
+
 	<ThingDef ParentName="BioConteiner_Base">
 		<defName>CargoContainerWaste</defName>
 		<label>Контейнер для токсичных отходов</label>
@@ -58,7 +58,7 @@
 		</graphicData>
 		<rotatable>false</rotatable>
 		<costList>
-			<Steel>60</Steel>
+			<Steel>260</Steel>
 		</costList>
 		<size>(4,3)</size>
 		<statBases>
@@ -74,7 +74,7 @@
 		  </li>
 		  
 		  <li Class="CompProperties_Refuelable">
-			<fuelConsumptionRate>1</fuelConsumptionRate>
+			<fuelConsumptionRate>0.1</fuelConsumptionRate>
 			<fuelCapacity>200.0</fuelCapacity>
 			<fuelFilter>
 			  <thingDefs>
@@ -97,17 +97,10 @@
 			<compClass>CompDissolutionEffect_Goodwill</compClass>
 		  </li>
 		</comps>
+		 <researchPrerequisites>
+      <li>ToxifierGenerator</li>
+    </researchPrerequisites>
 	</ThingDef>	
-	
-	
-	
-	
-
-	
-	
-	
-	
-	
 	
 	
 	

@@ -120,7 +120,7 @@
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>950</basePowerConsumption>
+        <basePowerConsumption>150</basePowerConsumption>
       </li>
     </comps>
     <description>Automatic turret equipped with a Shutgun.</description>
@@ -168,7 +168,7 @@
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>950</basePowerConsumption>
+        <basePowerConsumption>150</basePowerConsumption>
       </li>
     </comps>
     <description>Automatic turret equipped with a Toxic gun.</description>

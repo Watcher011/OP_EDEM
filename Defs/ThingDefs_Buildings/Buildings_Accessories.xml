@@ -249,6 +249,13 @@
 	<tickerType>Normal</tickerType>
 		<drawerType>RealtimeOnly</drawerType>
 		<fillPercent>0.45</fillPercent>
+	 <statBases>
+      <WorkToBuild>3200</WorkToBuild>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+	  <Mass>4</Mass>
+	<Cleanliness>3</Cleanliness>
+    </statBases>
    <costList>
 	  <yadaritRaW>10</yadaritRaW>
       <Steel>40</Steel>
