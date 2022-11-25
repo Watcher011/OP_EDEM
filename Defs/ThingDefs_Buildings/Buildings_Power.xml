@@ -56,6 +56,7 @@
           </thingDefs>
         </fuelFilter>
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+	   <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
       </li>
       <li Class="CompProperties_Glower">
         <glowRadius>6</glowRadius>

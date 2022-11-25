@@ -35,13 +35,14 @@
     </fixedIngredientFilter>
   </RecipeDef>
 
-	<RecipeDef ParentName="GrenadeRecipeBase">
+	<RecipeDef>
     <defName>MakeServitorKit</defName>
     <label>make servitor kit x1</label>
     <description>Craft Servitorkit.</description>
-    <jobString>MakingServitorkit.</jobString>
-    <researchPrerequisite>Machining</researchPrerequisite>
-    <workAmount>3600</workAmount>
+     <workAmount>400</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
     <ingredients>
       <li>
         <filter>
@@ -76,6 +77,9 @@
         <count>10</count>
       </li>
     </ingredients>
+	 <products>
+      <ServitorPak>1</ServitorPak>
+    </products>
     <fixedIngredientFilter>
       <categories>
         <li>Corpses</li>

@@ -132,6 +132,7 @@
     <building>
       <turretGunDef>Gun_DrobTurret</turretGunDef>
       <ai_combatDangerous>true</ai_combatDangerous>
+	  <turretTopDrawSize>4</turretTopDrawSize>
     </building>
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
@@ -180,6 +181,7 @@
     <building>
       <turretGunDef>Gun_ToxicSplinker</turretGunDef>
       <ai_combatDangerous>true</ai_combatDangerous>
+	  <turretTopDrawSize>2</turretTopDrawSize>
     </building>
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
@@ -233,7 +235,7 @@
 		<building>
 			<ai_combatDangerous>false</ai_combatDangerous>
 			<turretGunDef>Gun_Servitor</turretGunDef>
-			<turretTopDrawSize>3</turretTopDrawSize>
+			<turretTopDrawSize>2</turretTopDrawSize>
 		</building>
 		<designationHotKey>Misc1</designationHotKey>
  <researchPrerequisites>
@@ -284,7 +286,7 @@
 		<building>
 			<ai_combatDangerous>false</ai_combatDangerous>
 			<turretGunDef>Gun_Servitor_havi</turretGunDef>
-			<turretTopDrawSize>3</turretTopDrawSize>
+			<turretTopDrawSize>2</turretTopDrawSize>
 		</building>
 		<designationHotKey>Misc1</designationHotKey>
  <researchPrerequisites>
