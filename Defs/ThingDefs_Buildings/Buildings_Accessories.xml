@@ -216,6 +216,7 @@
         <explosiveRadius>2.66</explosiveRadius>
         <explosiveDamageType>Flame</explosiveDamageType>
       </li>
+	 
       <li Class="CompProperties_EmptyStateGraphic">
         <graphicData>
           <texPath>Things/Building/MaincrioOpen</texPath>
@@ -234,5 +235,55 @@
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
   </ThingDef>
 
+		   
+		   
+	
+  <ThingDef ParentName="LampBase">
+    <defName>ColdstoneFungus</defName>
+    <label>ColdstoneFungus</label>
+    <description>A specially-treated fungus</description>
+    <graphicData>
+      <texPath>Things/Building/Coldtorch</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Coldtorch</uiIconPath>
+	<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<fillPercent>0.45</fillPercent>
+   <costList>
+	  <yadaritRaW>10</yadaritRaW>
+      <Steel>40</Steel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>7</glowRadius>
+        <glowColor>(78, 226, 229, 0)</glowColor><!-- This is a specific darklight color, make sure it matches DarklightUtility.IsDarklight -->
+      </li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>-10</heatPerSecond>
+				<heatPushMinTemperature>-15</heatPushMinTemperature>
+			</li>
+			
+				<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>0.2</fuelConsumptionRate>
+				<fuelCapacity>3.0</fuelCapacity>
+				<fuelConsumptionPerTickInRain>0.02</fuelConsumptionPerTickInRain>
+				<fuelFilter>
+					<thingDefs>
+						<li>yadaritRaW</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>1</initialFuelPercent>
+				<destroyOnNoFuel>false</destroyOnNoFuel>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+			
+    </comps>
+	
+	 <researchPrerequisites>
+	    <li>EDEM</li>
+    </researchPrerequisites>
+  </ThingDef>
 
 </Defs>

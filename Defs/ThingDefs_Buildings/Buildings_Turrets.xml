@@ -225,16 +225,126 @@
 		<description>-----</description>
 		<costList>
 			<ServitorPak>1</ServitorPak>
+			 <Steel>100</Steel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+			<Plasteel>5</Plasteel>
 		</costList>
 		<designationCategory>Security</designationCategory>
 		<building>
 			<ai_combatDangerous>false</ai_combatDangerous>
 			<turretGunDef>Gun_Servitor</turretGunDef>
-			<turretTopDrawSize>2</turretTopDrawSize>
+			<turretTopDrawSize>3</turretTopDrawSize>
 		</building>
 		<designationHotKey>Misc1</designationHotKey>
-
+ <researchPrerequisites>
+      <li>EDEM</li>
+    </researchPrerequisites>
 		<minifiedDef>MinifiedTurretGun</minifiedDef>
 		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
 	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="TurretBase">
+		<defName>Turret_Servitor_havi</defName>
+		<label>havi sentry servitor turret</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/ServitorTurret_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(0.27,0.25,0.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Turrets/servitorhavi_Top</uiIconPath>
+		<statBases>
+	    	<MaxHitPoints>1000</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>2100</WorkToBuild>
+			<Mass>140</Mass>
+			<Bulk>120</Bulk>
+		</statBases>
+		<size>(2,2)</size>
+		<comps>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<description>-----</description>
+		<costList>
+			<ServitorPak>1</ServitorPak>
+			 <Steel>100</Steel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+			<Plasteel>5</Plasteel>
+		</costList>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<ai_combatDangerous>false</ai_combatDangerous>
+			<turretGunDef>Gun_Servitor_havi</turretGunDef>
+			<turretTopDrawSize>3</turretTopDrawSize>
+		</building>
+		<designationHotKey>Misc1</designationHotKey>
+ <researchPrerequisites>
+      <li>EDEM</li>
+    </researchPrerequisites>
+		<minifiedDef>MinifiedTurretGun</minifiedDef>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+	</ThingDef>
+
+	
+<ThingDef ParentName="TurretBase">
+		<defName>Turret_flame</defName>
+		<label>sentry flame turret</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/Timeture</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(0.27,0.25,0.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Turrets/TurretImprovised1_Top</uiIconPath>
+		<statBases>
+		    <MaxHitPoints>800</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>2800</WorkToBuild>
+			<Mass>16</Mass>
+			<Bulk>20</Bulk>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>250</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<description>-----</description>
+		<costList>
+			 <Steel>100</Steel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+			<Plasteel>5</Plasteel>
+		</costList>
+		<specialDisplayRadius>1</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<ai_combatDangerous>false</ai_combatDangerous>
+			<turretGunDef>Gun_flam</turretGunDef>
+			<turretTopDrawSize>3</turretTopDrawSize>
+		</building>
+		<designationHotKey>Misc1</designationHotKey>
+		 <researchPrerequisites>
+      <li>EDEM</li>
+    </researchPrerequisites>
+		<minifiedDef>MinifiedTurretGun</minifiedDef>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+	</ThingDef>
+	
 </Defs>
