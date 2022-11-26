@@ -48,6 +48,8 @@
 	<li>ExtractYAdaritFromYadaritRaW</li>
       <li>ExtractMetalFromSlag</li>
 	   <li>MakeServitorKit</li>
+	    <li>MakeShell_SmokeToxic</li>
+		 <li>MakeAmmo_90mmCannonShell_Tocx</li>
     </recipes>
 	<tickerType>Normal</tickerType>
     <inspectorTabs>
