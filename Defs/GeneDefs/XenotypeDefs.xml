@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <XenotypeDef>
+    <defName>Baseliner</defName>
+    <label>baseliner</label>
+    <description>A naturally-evolved human with no major significant genetic modifications.</description>
+    <iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
+    <displayPriority>1000</displayPriority>
+  </XenotypeDef>
+
+
+
+ 
+ 
+  <XenotypeDef>
+    <defName>TentHulk</defName>
+    <label>TentHulk</label>
+    <description>-/-/-/-</description>
+    <descriptionShort>-/-short-/-</descriptionShort>
+    <iconPath>UI/Icons/Genes/Tent</iconPath>
+    <combatPowerFactor>0.8</combatPowerFactor>
+    <canGenerateAsCombatant>false</canGenerateAsCombatant>
+    <genes>
+      <li>AptitudeRemarkable_Mining</li>
+      <li>MeleeDamage_Strong</li> 
+      <li>Nearsighted</li>
+      <li>Pain_Extra</li>
+      <li>Body_Standard</li>
+      <li>Eyes_Red</li>
+	 <li>Hemogenic</li>
+      <li>HemogenDrain</li>
+      <li>Tail_Furry</li>
+     <li>Libido_High_Tentacla</li>
+    </genes>
+  </XenotypeDef>
+
+</Defs>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Temperature -->
+
+  <GeneDef Name="GeneMinTempBase" Abstract="True">
+    <displayCategory>Temperature</displayCategory>
+    <exclusionTags>
+      <li>MinTemperature</li>
+    </exclusionTags>
+  </GeneDef>
+
+ 
+
+
+  <!--  Libido -->
+
+  <GeneDef Name="LibidoBase" Abstract="True">
+    <displayCategory>Reproduction</displayCategory>
+    <exclusionTags>
+      <li>Libido</li>
+    </exclusionTags>
+  </GeneDef>
+
+
+  <GeneDef ParentName="LibidoBase">
+    <defName>Libido_High_Tentacla</defName>
+    <label>high libido Tentacla</label>
+    <description>Carriers of this gene are more likely to engage in lovin' with their partner.</description>
+    <customEffectDescriptions>
+      <li>Increases the chance of lovin'.</li>
+    </customEffectDescriptions>
+	 <minAgeActive>18</minAgeActive>
+	 <abilities>
+      <li>AcidSpray</li>
+    </abilities>
+	<descriptionHyperlinks>
+      <AbilityDef>AcidSpray</AbilityDef>
+    </descriptionHyperlinks>
+	 <statFactors>
+      <ImmunityGainSpeed>1.1</ImmunityGainSpeed>
+	  <ToxicEnvironmentResistance>0.3</ToxicEnvironmentResistance>
+	  <Fertility>4</Fertility>
+    </statFactors>
+	 <damageFactors>
+      <Flame>4</Flame>
+    </damageFactors>
+    <biostatMet>3</biostatMet>
+    <iconPath>UI/Icons/Genes/Gene_HighLibidoTentacla</iconPath>
+    <displayOrderInCategory>11</displayOrderInCategory>
+	 <forcedTraits>
+      <li>
+        <def>Beauty</def>
+        <degree>2</degree>
+      </li>
+	  <li>
+        <def>NaturalMood</def>
+        <degree>1</degree>
+      </li>
+    </forcedTraits>
+	 <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>immortal</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>god</symbol></li>
+        <li><symbol>deo</symbol></li>
+        <li><symbol>deu</symbol></li>
+		  <li><symbol>acid</symbol></li>
+        <li><symbol>acer</symbol></li>
+        <li><symbol>acri</symbol></li>
+        <li><symbol>oxo</symbol></li>
+		 <li><symbol>dry</symbol></li>
+        <li><symbol>tinder</symbol></li>
+        <li><symbol>kindle</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>god</symbol></li>
+        <li><symbol>deus</symbol></li>
+		 <li><symbol>sprayer</symbol></li>
+        <li><symbol>spitter</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+	<exclusionTags>
+      <li>FireDamage</li>
+    </exclusionTags>
+  </GeneDef>
+
+</Defs>

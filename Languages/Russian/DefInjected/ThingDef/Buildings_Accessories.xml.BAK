@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <YadaritLamp.label>Лампа с кристалом Ядарита</YadaritLamp.label>
+  <YadaritLamp.description>Лампа с необработанным кристалом Ядарита.</YadaritLamp.description>
+
+  <YadaritLamp2A.label>Колба с осколком Ядарита</YadaritLamp2.label>
+  <YadaritLamp2A.description>Колба наполненая осколками ядарита,Дарит свет и уют.</YadaritLamp2.description>
+
+  <SunLedLamp.label>Прожектор</SunLedLamp.label>
+  <SunLedLamp.description>Led прожектор из подручных материалов.</SunLedLamp.description>
+
+  <CryptosleepCasketforservitor.label>Старыйая криогенная камера</CryptosleepCasketforservitor.label>
+  <CryptosleepCasketforservitor.description>Древний холодильник</CryptosleepCasketforservitor.description>
+
+
+</LanguageData>

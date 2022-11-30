@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CargoContainerWaste.label>Контейнер для токсичных отходов</CargoContainerWaste.label>
+  <CargoContainerWaste.description>Контейнер высокого давления, который может безопасно хранить большое количество токсичных отходов и из-за чего они разлагаются довольно медленно ... Нет ... Хранить внутри все равно небезопасно. если вы не обращались с ними хорошо, он легко превратится в гигантскую токсичную бомбу.</CargoContainerWaste.description>
+  <CargoContainerWaste_Blueprint.label>Контейнер для токсичных отходов (blueprint)</CargoContainerWaste_Blueprint.label>
+  <CargoContainerWaste_Frame.label>Контейнер для токсичных отходов (building)</CargoContainerWaste_Frame.label>
+  <CargoContainerWaste_Frame.description>Контейнер высокого давления, который может безопасно хранить большое количество токсичных отходов и из-за чего они разлагаются довольно медленно ... Нет ... Хранить внутри все равно небезопасно. если вы не обращались с ними хорошо, он легко превратится в гигантскую токсичную бомбу.</CargoContainerWaste_Frame.description>
+
+
+</LanguageData>

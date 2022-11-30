@@ -12,5 +12,16 @@
   <Gun_ToxicSplinker.label>Токсикомёт</Gun_ToxicSplinker.label>
   <Gun_ToxicSplinker.description>Автоматичиская турель снаряженная токсичными отходами колонии.</Gun_ToxicSplinker.description>
 
+  <Gun_Servitor.label>Servitor</Gun_Servitor.label>
+  <Gun_Servitor.description>-------------</Gun_Servitor.description>
+
+  <Gun_Servitor_havi.label>Servitor.50mm</Gun_Servitor_havi.label>
+  <Gun_Servitor_havi.description>-------------</Gun_Servitor_havi.description>
+
+  <Gun_flam.label>flam gun</Gun_flam.label>
+  <Gun_flam.description>-------------</Gun_flam.description>
+
+  <Gun_Servitor_artillery.label>Servitor.artillery</Gun_Servitor_artillery.label>
+
 
 </LanguageData>

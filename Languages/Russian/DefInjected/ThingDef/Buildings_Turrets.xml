@@ -12,5 +12,17 @@
   <Turret_Blaster_Toxic.label>Токсикомёт</Turret_Blaster_Toxic.label>
   <Turret_Blaster_Toxic.description>Автоматичиская турель снаряженная токсичными отходами колонии.</Turret_Blaster_Toxic.description>
 
+  <Turret_Servitor.label>Сервитор с лёгким пулемётом</Turret_Servitor.label>
+  <Turret_Servitor.description>Сервитор что вооружен двумя лёгкими пулемётами.</Turret_Servitor.description>
+
+  <Turret_Servitor_havi.label>Сервитор с крупноколиберным пулемётом</Turret_Servitor_havi.label>
+  <Turret_Servitor_havi.description>Сервитор что вооружен двумя Тяж пулемётами.</Turret_Servitor_havi.description>
+
+  <Turret_flame.label>Автоматичиский огнемёт</Turret_flame.label>
+  <Turret_flame.description>-----</Turret_flame.description>
+
+  <Turret_Servitor_Arta.label>90мм пушка с Сервитором</Turret_Servitor_Arta.label>
+  <Turret_Servitor_Arta.description>Старая пушка под управлением сервитора</Turret_Servitor_Arta.description>
+
 
 </LanguageData>

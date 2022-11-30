@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="BodyPartArchotechBase" ParentName="BodyPartBase" Abstract="True">
+    <techLevel>Archotech</techLevel>
+    <thingCategories>
+      <li>BodyPartsArchotech</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <color>(155,165,148)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+  </ThingDef>
+
+
+
+  <!-- Archotech arm -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>TentnclArm</defName>
+    <label>Tentncl arm</label>
+    <labelNoun>an Tentncl arm</labelNoun>
+    <description>An installed Tentncl arm.</description>
+    <descriptionHyperlinks><ThingDef>TentnclArm</ThingDef></descriptionHyperlinks>
+	 <stages>
+      <li>
+        <statOffsets>
+          <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.08</offset>
+          </li>
+        </capMods>
+		</li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>fist</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>18</power>
+            <cooldownTime>1</cooldownTime>
+            <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+          </li>
+        </tools>
+		 </li>
+    </comps>
+    <spawnThingOnRemoved>TentnclArm</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.80</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartArchotechBase">
+    <defName>TentnclArm</defName>
+    <label>Tentncl Arm</label>
+    <description>An artificial arm built by an archotech. It's strong enough to crush a thick hardwood branch in its hand, and precise enough to write a sonnet on a grain of rice. It looks and feels like natural flesh, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to all human minds.</description>
+    <descriptionHyperlinks><RecipeDef>InstallTentnclArm</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>2800</MarketValue>
+      <Mass>4</Mass>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallTentnclArm</defName>
+    <label>install Tentncl Arm</label>
+    <description>Install an TentnclArm arm.</description>
+    <descriptionHyperlinks>
+      <ThingDef>TentnclArm</ThingDef>
+      <HediffDef>TentnclArm</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Tentncl Arm.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TentnclArm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TentnclArm</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Shoulder</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>TentnclArm</addsHediff>
+  </RecipeDef>
+
+ 
+</Defs>

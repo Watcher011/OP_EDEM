@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Archotech arm -->
+
+  <TentnclArm.label>Тентакля</TentnclArm.label>
+  <TentnclArm.description>Установка Тентакли.</TentnclArm.description>
+  <TentnclArm.comps.0.tools.0.label>Тентакля</TentnclArm.comps.0.tools.0.label>
+  <TentnclArm.labelNoun>Ркуа тентакля</TentnclArm.labelNoun>
+
+
+</LanguageData>

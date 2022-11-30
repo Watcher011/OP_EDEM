@@ -11,12 +11,17 @@
   <MakeAmmo_90mmCannonShell_HE.description>Сделать 5 боеприпасов к пушке калибра 90 мм (ОФ).</MakeAmmo_90mmCannonShell_HE.description>
   <MakeAmmo_90mmCannonShell_HE.jobString>Делает боеприпасы 90 мм (ОФ).</MakeAmmo_90mmCannonShell_HE.jobString>
 
+  <MakeAmmo_90mmCannonShell_HE_TFuzed.label>make 90mm HE airburst cannon shells x5</MakeAmmo_90mmCannonShell_HE_TFuzed.label>
+  <MakeAmmo_90mmCannonShell_HE_TFuzed.description>Craft 5 90mm HE airburst cannon shells.</MakeAmmo_90mmCannonShell_HE_TFuzed.description>
+  <MakeAmmo_90mmCannonShell_HE_TFuzed.jobString>Making 90mm HE airburst cannon shells.</MakeAmmo_90mmCannonShell_HE_TFuzed.jobString>
+
   <MakeAmmo_90mmCannonShell_EMP.label>сделать орудийные боеприпасы 90 мм (ЭМИ) (5 шт.)</MakeAmmo_90mmCannonShell_EMP.label>
   <MakeAmmo_90mmCannonShell_EMP.description>Сделать 5 боеприпасов к пушке калибра 90 мм (ЭМИ).</MakeAmmo_90mmCannonShell_EMP.description>
   <MakeAmmo_90mmCannonShell_EMP.jobString>Делает боеприпасы 90 мм (ЭМИ).</MakeAmmo_90mmCannonShell_EMP.jobString>
 
- <MakeAmmo_90mmCannonShell_Tocx.label>сделать орудийные боеприпасы 90 мм (Газ) (5 шт.)</MakeAmmo_90mmCannonShell_Tocx.label>
+  <MakeAmmo_90mmCannonShell_Tocx.label>сделать орудийные боеприпасы 90 мм (Газ) (5 шт.)</MakeAmmo_90mmCannonShell_Tocx.label>
   <MakeAmmo_90mmCannonShell_Tocx.description>Сделать 5 боеприпасов к пушке калибра 90 мм (Газ).</MakeAmmo_90mmCannonShell_Tocx.description>
   <MakeAmmo_90mmCannonShell_Tocx.jobString>Делает боеприпасы 90 мм (Газ).</MakeAmmo_90mmCannonShell_Tocx.jobString>
+
 
 </LanguageData>

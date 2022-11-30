@@ -11,6 +11,10 @@
   <MakeShell_Incendiary.description>Сделать 5 боеприпасов к миномёту калибра 81 мм (зажигательный).</MakeShell_Incendiary.description>
   <MakeShell_Incendiary.jobString>Делает боеприпасы 81 мм (зажигательный).</MakeShell_Incendiary.jobString>
 
+  <MakeShell_SmokeToxic.label>сделать миномётные боеприпасы 81 мм (Газ) (5 шт.)</MakeShell_SmokeToxic.label>
+  <MakeShell_SmokeToxic.description>Сделать 5 боеприпасов к миномёту калибра 81 мм (Газ).</MakeShell_SmokeToxic.description>
+  <MakeShell_SmokeToxic.jobString>Делает боеприпасы 81 мм (Газ).</MakeShell_SmokeToxic.jobString>
+
   <MakeShell_EMP.label>сделать миномётные боеприпасы 81 мм (ЭМИ) (5 шт.)</MakeShell_EMP.label>
   <MakeShell_EMP.description>Сделать 5 боеприпасов к миномёту калибра 81 мм (ЭМИ).</MakeShell_EMP.description>
   <MakeShell_EMP.jobString>Делает боеприпасы 81 мм (ЭМИ).</MakeShell_EMP.jobString>
@@ -23,9 +27,5 @@
   <MakeShell_Smoke.description>Сделать 5 боеприпасов к миномёту калибра 81 мм (дым).</MakeShell_Smoke.description>
   <MakeShell_Smoke.jobString>Делает боеприпасы 81 мм (дым).</MakeShell_Smoke.jobString>
 
-
- <MakeShell_SmokeToxic.label>сделать миномётные боеприпасы 81 мм (Газ) (5 шт.)</MakeShell_SmokeToxic.label>
-  <MakeShell_SmokeToxic.description>Сделать 5 боеприпасов к миномёту калибра 81 мм (Газ).</MakeShell_SmokeToxic.description>
-  <MakeShell_SmokeToxic.jobString>Делает боеприпасы 81 мм (Газ).</MakeShell_SmokeToxic.jobString>
 
 </LanguageData>

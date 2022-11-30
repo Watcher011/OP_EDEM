@@ -7,10 +7,10 @@
 
   <MakeServitorKit.label>Создать сервитора</MakeServitorKit.label>
   <MakeServitorKit.description>Создаёт сервитора.</MakeServitorKit.description>
-  <MakeServitorKit.jobString>Создаёт сервитора.</MakeServitorKit.jobString>
 
 
-  <!--<Servitor.label>Создание сервитора</Servitor.label>-->
-  <!--<Servitor.description>Сервиторы — машины-полурабы из живой плоти и металла, существа без индивидуального разума, которые повинуются запрограммированным командам без лишних вопросов..</Servitor.description>-->
+<MakeServitorKit.jobString>Создаёт сервитора.</MakeServitorKit.jobString>
+<Servitor.label>Создание сервитора</Servitor.label>
+<Servitor.description>Сервиторы — машины-полурабы из живой плоти и металла, существа без индивидуального разума, которые повинуются запрограммированным командам без лишних вопросов..</Servitor.description>
 
 </LanguageData>
