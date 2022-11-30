@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Hair restrictions -->
+
+
+  <!-- ============= Skin color overrides ============== --> 
+
+  <GeneDef Name="GeneSkinColorOverride" Abstract="True">
+    <biostatCpx>0</biostatCpx>
+    <displayCategory>Cosmetic_Skin</displayCategory>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <exclusionTags>
+      <li>SkinColorOverride</li>
+    </exclusionTags>
+    <randomBrightnessFactor>0.18</randomBrightnessFactor>
+  </GeneDef>
+
+  <!-- Skin - exotic monochrome -->
+
+
+  <GeneDef Name="GeneTailBase" Abstract="True">
+    <displayCategory>Miscellaneous</displayCategory>
+    <randomChosen>true</randomChosen>
+    <exclusionTags>
+      <li>Tail</li>
+    </exclusionTags>
+    <graphicData>
+      <drawLoc>Tailbone</drawLoc>
+    </graphicData>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneTailBase">
+    <defName>Tail_Furry_Tentakla</defName>
+    <label>furry  Tentakla tail</label>
+    <description>Tentakla.</description>
+    <iconPath>UI/Icons/Genes/Tene_Tail</iconPath>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <displayOrderInCategory>1000</displayOrderInCategory>
+    <statOffsets>
+      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+    </statOffsets>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <graphicData>
+      <graphicPath>UI/Icons/Genes/Tene_Tail</graphicPath>
+       <color>(39,116,79)</color>
+      <drawOffsetNorth>(0.1, 0.2, -0.35)</drawOffsetNorth>
+      <drawOffsetSouth>(-0.1, -0.1, -0.25)</drawOffsetSouth>
+      <drawOffsetEast>(-0.5, -0.1, -0.15)</drawOffsetEast>
+    </graphicData>
+  </GeneDef>
+
+
+ 
+ 
+</Defs>
