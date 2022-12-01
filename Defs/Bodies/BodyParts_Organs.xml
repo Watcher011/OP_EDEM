@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyPartDef>
+    <defName>Brain</defName>
+    <label>Brain</label>
+    <hitPoints>20</hitPoints>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>BloodFiltrationLiver</li>
+      <li>MetabolismSource</li>
+    </tags>
+    <spawnThingOnRemoved>Brain</spawnThingOnRemoved>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+
+  
+</Defs>

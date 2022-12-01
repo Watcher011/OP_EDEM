@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Base: Natural body part -->
+  <ThingDef Name="BodyPartNaturalBase" ParentName="BodyPartBase" Abstract="True">
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+    <thingCategories>
+      <li>BodyPartsNatural</li>
+    </thingCategories>
+    <statBases>
+      <DeteriorationRate>4.0</DeteriorationRate>
+    </statBases>
+  </ThingDef>
+
+  <!-- Heart -->
+  <ThingDef ParentName="BodyPartNaturalBase">
+    <defName>Brain</defName>
+    <label>Brain</label>
+    <description>A biological human Brain.</description>
+	  <graphicData>
+      <texPath>Things/Item/Brain</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.20</drawSize>
+    </graphicData>
+    <descriptionHyperlinks><RecipeDef>InstallNaturalBrain</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <defName>InstallNaturalBrain</defName>
+    <label>install Brain</label>
+    <description>Install a biological Brain.</description>
+    <descriptionHyperlinks><ThingDef>Brain</ThingDef></descriptionHyperlinks>
+    <jobString>Installing Brain.</jobString>
+    <deathOnFailedSurgeryChance>0.25</deathOnFailedSurgeryChance>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Brain</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Brain</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+  </RecipeDef>
+
+
+
+
+ 
+
+</Defs>

@@ -55,10 +55,10 @@
 	   <li>
         <filter>
           <thingDefs>
-            <li>yadaritRaW</li>
+            <li>Brain</li>
           </thingDefs>
         </filter>
-        <count>30</count>
+        <count>1</count>
       </li>
 	   <li>
         <filter>
@@ -92,7 +92,7 @@
     <defaultIngredientFilter>
       <thingDefs>
         <li>Corpse_Human</li>
-		 <li>yadaritRaW</li>
+		 <li>Brain</li>
 		  <li>Steel</li>
       </thingDefs>
       <specialFiltersToAllow>
