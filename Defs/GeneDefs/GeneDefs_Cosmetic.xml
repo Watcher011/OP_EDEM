@@ -47,7 +47,7 @@
        <color>(39,116,79)</color>
       <drawOffsetNorth>(0.1, 0.2, -0.35)</drawOffsetNorth>
       <drawOffsetSouth>(-0.1, -0.1, -0.25)</drawOffsetSouth>
-      <drawOffsetEast>(-0.5, -0.1, -0.15)</drawOffsetEast>
+      <drawOffsetEast>(-0.05, -0.1, -0.25)</drawOffsetEast>
     </graphicData>
   </GeneDef>
 
