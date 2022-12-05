@@ -50,6 +50,7 @@
 	   <li>MakeServitorKit</li>
 	    <li>MakeShell_SmokeToxic</li>
 		 <li>MakeAmmo_90mmCannonShell_Tocx</li>
+		<li>MakeComponentIndustrialFromYadarit</li>
     </recipes>
 	<tickerType>Normal</tickerType>
     <inspectorTabs>

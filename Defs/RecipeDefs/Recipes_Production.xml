@@ -35,6 +35,43 @@
     </fixedIngredientFilter>
   </RecipeDef>
 
+
+ <RecipeDef>
+    <defName>MakeComponentIndustrialFromYadarit</defName>
+    <label>smelt ComponentIndustrial</label>
+    <description>Use heat and strong electromagnets to extract useful Component Industrial RaW.</description>
+    <jobString>Extract Component Industrial Yadarit.</jobString>
+    <workAmount>400</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>YadaritBar</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+    </ingredients>
+    <!-- Switched to standard products so we can do "do until you have X"
+    <specialProducts>
+      <li>Smelted</li>
+    </specialProducts>-->
+    <products>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>YadaritBar</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+
+
+
 	<RecipeDef>
     <defName>MakeServitorKit</defName>
     <label>make servitor kit x1</label>
