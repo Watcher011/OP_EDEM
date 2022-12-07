@@ -24,4 +24,70 @@
 		</verbProperties>
 	</AbilityDef>
 
+
+
+
+
+
+  <AbilityDef>
+    <defName>KarSpray</defName>
+    <label>Кар</label>
+    <description>Ворона наносит внезапный удар клювом в произвольную точку. Учитывая силу удара звуковых колебаний,урон наноситься дистанционный</description>
+    <iconPath>UI/Icons/Genes/KAR</iconPath>
+    <cooldownTicksRange>3000</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+    <displayOrder>100</displayOrder>
+    <category>Sanguophage</category>
+    <warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>8.9</range>
+      <warmupTime>0.1</warmupTime>
+      <soundCast>AcidSpray_Resolve</soundCast>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilitySprayLiquid">
+        <projectileDef>Proj_Acid</projectileDef>
+        <numCellsToHit>1</numCellsToHit>
+        <sprayEffecter>AcidSpray_Directional</sprayEffecter>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+  
+  
+  <ThingDef>
+    <defName>Proj_Acid</defName>
+    <label>Кхеее</label>
+    <thingClass>Projectile_Liquid</thingClass>
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <texPath>Things/Projectile/Acid</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Thump</damageDef>
+      <speed>45</speed>
+      <damageAmountBase>30</damageAmountBase>
+      <arcHeightFactor>0.4</arcHeightFactor>
+      <armorPenetrationBase>0.8</armorPenetrationBase>
+      <stoppingPower>1</stoppingPower>
+      <shadowSize>0</shadowSize>
+      <filth>Filth_Slime</filth>
+      <filthCount>1</filthCount>
+    </projectile>
+  </ThingDef>
+
+
+
+
 </Defs>

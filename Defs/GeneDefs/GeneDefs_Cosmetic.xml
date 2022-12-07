@@ -81,6 +81,7 @@
     </graphicData>
 	<abilities>
 			<li>WingPoweredJump</li>
+			<li>KarSpray</li>
     </abilities>
   </GeneDef>
 
