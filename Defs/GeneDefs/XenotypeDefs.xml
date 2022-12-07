@@ -35,4 +35,30 @@
     </genes>
   </XenotypeDef>
 
+
+
+ <XenotypeDef>
+    <defName>Karkysha</defName>
+    <label>Вальраван-ворон-оборотень</label>
+    <description>Ворон, насытившийся останками погибшего в битве короля и приобретший благодаря этому сверхъестественные способности</description>
+    <descriptionShort>-/-short-/-</descriptionShort>
+    <iconPath>UI/Icons/Genes/Kar2</iconPath>
+    <combatPowerFactor>0.8</combatPowerFactor>
+    <canGenerateAsCombatant>false</canGenerateAsCombatant>
+    <genes>
+	<li>Eyes_Gray</li>
+     <li>Vings</li>
+	 <li>Skin_SheerWhite</li>
+	  <li>Body_Thin</li>
+	    <li>VoiceRoar</li>
+		 <li>WoundHealing_Slow</li>
+		  <li>KillThirst</li>
+		    <li>Ageless</li>
+			 <li>Beauty_Pretty</li>
+			  <li>Delicate</li>
+			   <li>LowSleep</li>
+    </genes>
+  </XenotypeDef>
+
+
 </Defs>
