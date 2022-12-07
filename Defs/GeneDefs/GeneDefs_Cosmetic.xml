@@ -51,6 +51,38 @@
     </graphicData>
   </GeneDef>
 
+<GeneDef Name="WingBase" Abstract="True">
+		<displayCategory>Miscellaneous</displayCategory>
+		<exclusionTags>
+			<li>Wing</li>
+			<li>Wings</li>
+		</exclusionTags>
+		<graphicData>
+			<drawLoc>Tailbone</drawLoc>
+		</graphicData>
+		<randomChosen>true</randomChosen>
+	</GeneDef>
+ <GeneDef ParentName="WingBase">
+    <defName>Vings</defName>
+    <label>Крылья Вредной вороны</label>
+    <description>При извлечении гена крыльев ,создание молвило "Делай, не понравится - каркну, понравится - может быть не каркну"</description>
+    <iconPath>UI/Icons/Genes/karVing</iconPath>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <displayOrderInCategory>1000</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <graphicData>
+      <graphicPath>UI/Icons/Genes/karVing/karVing</graphicPath>
+       <colorType>Hair</colorType>
+	   <drawScale>1</drawScale>
+     <drawOffsetNorth>(0, 0.19, 0)</drawOffsetNorth>
+			<drawOffsetSouth>(0, 0, 0)</drawOffsetSouth>
+			<drawOffsetEast>(0, 0, 0)</drawOffsetEast>
+    </graphicData>
+	<abilities>
+			<li>WingPoweredJump</li>
+    </abilities>
+  </GeneDef>
 
  
  
