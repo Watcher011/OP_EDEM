@@ -52,7 +52,7 @@
 	  <li>Body_Thin</li>
 	    <li>VoiceRoar</li>
 		 <li>WoundHealing_Slow</li>
-		  <li>KillThirst</li>
+		 <!-- <li>KillThirst</li>-->
 		    <li>Ageless</li>
 			 <li>Beauty_Pretty</li>
 			  <li>Delicate</li>

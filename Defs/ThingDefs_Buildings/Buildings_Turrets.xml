@@ -399,4 +399,79 @@
 		<minifiedDef>MinifiedTurretGun</minifiedDef>
 		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
 	</ThingDef>
+	
+	
+
+
+<ThingDef ParentName="TurretAutoBase">
+     <defName>PollutionPump2</defName>
+    <label>Экстрактор отходов</label>
+    <description>Экстрактор отходов созданный на основе Мех-ядра и вооруженный токсичной туррелью.Предназначен для очисток огромных тереторий от ядовитых веществ.</description>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <graphicData>
+      <texPath>Things/Building/Cleaner</texPath>
+	    <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+	 <uiIconScale>0.85</uiIconScale>
+    <uiIconPath>Things/Building/Cleaner</uiIconPath>
+    <statBases>
+      <WorkToBuild>48000</WorkToBuild>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Mass>20</Mass>
+      <Bulk>25</Bulk>
+      <AimingAccuracy>0.75</AimingAccuracy>
+      <ShootingAccuracyTurret>1.25</ShootingAccuracyTurret>
+    </statBases>
+	 <size>(2,2)</size>
+    <techLevel>Spacer</techLevel>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1000</basePowerConsumption>
+      </li>
+	    <li Class="CompProperties_PollutionPump">
+        <radius>40.9</radius>
+        <pumpEffecterDef>PollutionPumped</pumpEffecterDef>
+        <pumpsPerWastepack>40</pumpsPerWastepack>
+        <intervalTicks>1500</intervalTicks>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+	   <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(217,112,33,0)</glowColor>
+      </li>
+    </comps>
+    <costList>
+     <Steel>175</Steel>
+      <SubcoreBasic>1</SubcoreBasic>
+      <Plasteel>30</Plasteel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <building>
+      <turretGunDef>Gun_ToxicSplinker</turretGunDef>
+      <ai_combatDangerous>true</ai_combatDangerous>
+	  <turretTopDrawSize>1</turretTopDrawSize>
+	   <buildingTags>
+        <li>Biotech</li>
+      </buildingTags>
+    </building>
+	 <designationCategory>Biotech</designationCategory>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+	   <li>PlaceWorker_PollutionPump</li>
+    </placeWorkers>
+	 <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <researchPrerequisites>
+      <li>EDEM</li>
+    </researchPrerequisites>
+    <minifiedDef>MinifiedThing</minifiedDef>
+  </ThingDef>
+  
+
 </Defs>
