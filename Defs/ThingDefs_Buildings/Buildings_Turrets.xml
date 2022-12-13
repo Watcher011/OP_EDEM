@@ -246,6 +246,7 @@
 	</ThingDef>
 	
 	
+
 	
 	<ThingDef ParentName="TurretBase">
 		<defName>Turret_Servitor_havi</defName>

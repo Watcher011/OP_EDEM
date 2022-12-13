@@ -27,6 +27,7 @@
       <harvestTag>Standard</harvestTag>
       <harvestedThingDef>yadaritRaW</harvestedThingDef>
       <harvestYield>11</harvestYield>
+	   <wildOrder>1</wildOrder>
       <sowTags>
         <li>Ground</li>
         <li>Hydroponic</li>
