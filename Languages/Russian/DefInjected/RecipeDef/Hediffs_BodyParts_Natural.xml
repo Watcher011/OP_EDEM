@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Heart -->
+
+  <InstallNaturalBrain.label>Имплантировать Мозг</InstallNaturalBrain.label>
+  <InstallNaturalBrain.description>Вживить Мозг.</InstallNaturalBrain.description>
+  <InstallNaturalBrain.jobString>Запихивает серую кашецу в котелок.</InstallNaturalBrain.jobString>
+
+
+</LanguageData>

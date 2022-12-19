@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WingPoweredJump.label>Ворона птица гордая</WingPoweredJump.label>
+  <WingPoweredJump.description>Уиииии ааааа бляяяя , я лечуууу.</WingPoweredJump.description>
+  <WingPoweredJump.verbProperties.label>Машет крыльями</WingPoweredJump.verbProperties.label>
+
+  <KarSpray.label>Кар</KarSpray.label>
+  <KarSpray.description>Ворона наносит внезапный удар клювом в произвольную точку. Учитывая силу удара звуковых колебаний,урон наноситься дистанционный</KarSpray.description>
+
+
+</LanguageData>

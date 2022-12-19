@@ -4,7 +4,10 @@
   <GarbagePoweredGenerator.label>Блок очистки</GarbagePoweredGenerator.label>
   <GarbagePoweredGenerator.description>Блок очистки с разбившегося космического корабля.Повторная обработка мксора с выделением чистой энергии .</GarbagePoweredGenerator.description>
 
-  <ShildGenerator.label>Генератор искажаюшего импульса</ShildGenerator.label>
+  <PortableGenerator.label>Портативный генератор</PortableGenerator.label>
+  <PortableGenerator.description>Маленький генератор, что способен обеспечить светом крохотную колонию</PortableGenerator.description>
+
+  <ShildGenerator.label>Генератор искажаюшего поля</ShildGenerator.label>
   <ShildGenerator.description>Барьер кинитического искажения</ShildGenerator.description>
 
 

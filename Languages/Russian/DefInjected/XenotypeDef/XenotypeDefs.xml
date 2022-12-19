@@ -1,9 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
- 
+
   <TentHulk.label>Тентаклеморф</TentHulk.label>
   <TentHulk.description>Ген похотливой тентакли внёс коррективу в гены обычного человека сделав его лучше ,похотливей ,больше похожими на первоисточник .Но есть ли придел совершенству ???</TentHulk.description>
+
+  <Karkysha.label>Вальраван-ворон-оборотень</Karkysha.label>
+  <Karkysha.description>Ворон, насытившийся останками погибшего в битве короля и приобретший благодаря этому сверхъестественные способности</Karkysha.description>
 
 
 </LanguageData>
