@@ -51,6 +51,8 @@
 	    <li>MakeShell_SmokeToxic</li>
 		 <li>MakeAmmo_90mmCannonShell_Tocx</li>
 		<li>MakeComponentIndustrialFromYadarit</li>
+		<li>MakeAmmo_PlasmaCellUltraHeavy</li>
+		<li>MakeToxinAmmo</li>
     </recipes>
 	<tickerType>Normal</tickerType>
     <inspectorTabs>

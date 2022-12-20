@@ -175,7 +175,57 @@
 	</ThingDef>
 
 
-
+<ThingDef ParentName="BaseAutoTurretGun">
+		<defName>Gun_Servitor_plasma</defName>
+		<label>Servitor plasma</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/servitormort1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<!-- <menuHidden>True</menuHidden> -->
+		<description>-------------</description>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<tradeability>None</tradeability>
+		<statBases>
+			 <MarketValue>2500</MarketValue>
+            <SightsEfficiency>1</SightsEfficiency>
+            <ShotSpread>0.1</ShotSpread>
+            <SwayFactor>0.5</SwayFactor>
+            <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+            <Bulk>19</Bulk>
+            <Mass>270.5</Mass>
+		</statBases>
+		<verbs>
+			  <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.35</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_PlasmaUltraHeavy</defaultProjectile>
+                <warmupTime>1.7</warmupTime>
+                <range>45</range>
+				<targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <ticksBetweenBurstShots>90</ticksBetweenBurstShots>
+                <burstShotCount>3</burstShotCount>
+                <soundCast>ShotAK47</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+		</verbs>
+		<comps>
+			  <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>1</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>100</magazineSize>
+                <reloadTime>10.5</reloadTime>
+                <ammoSet>AmmoSet_PlasmaUltraHeavy</ammoSet>
+            </li>
+		</comps>
+	</ThingDef>
 
 
 	
