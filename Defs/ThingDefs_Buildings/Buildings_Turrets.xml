@@ -247,7 +247,7 @@
 	
 	<ThingDef ParentName="TurretBase">
 		<defName>Turret_Servitor_plasma</defName>
-		<label>sentry servitor turret plasma</label>
+		<label>Серветор с плазменной пушкой</label>
 		<graphicData>
 			<texPath>Things/Building/Turrets/ServitorTurret_Base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -272,13 +272,17 @@
 		<comps>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
+			  <li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(0,255,255,0)</glowColor>
+      </li>
 		</comps>
-		<description>-----</description>
+		<description>Плазменное оружие — мощное энергетическое бронебойное оружие, во многих своих вариантах используемое продвинутыми разумными расами Галактики. Основная часть плазменного оружия работает по принципу доставки к цели импульсов обжигающей энергии и сверхнагретой материи в виде газообразной плазмы. Эти «сгустки» при встрече с препятствием детонируют, высвобождая энергию маленького солнца и обычно одного попадания хватает, чтобы нанести врагу критические повреждения, а то и вовсе испарить его.</description>
 		<costList>
 			<ServitorPak>1</ServitorPak>
 			 <Steel>100</Steel>
             <ComponentIndustrial>3</ComponentIndustrial>
-			<Plasteel>5</Plasteel>
+			<Plasteel>10</Plasteel>
 		</costList>
 		<designationCategory>Security</designationCategory>
 		<building>
@@ -452,7 +456,7 @@
 
 
 <ThingDef ParentName="TurretAutoBase">
-     <defName>PollutionPump2</defName>
+     <defName>PollutionPumpS</defName>
     <label>Экстрактор отходов</label>
     <description>Экстрактор отходов созданный на основе Мех-ядра и вооруженный токсичной туррелью.Предназначен для очисток огромных тереторий от ядовитых веществ.</description>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>

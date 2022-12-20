@@ -177,6 +177,8 @@
     </researchPrerequisites>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
   </ThingDef>
+  
+  
  <ThingDef ParentName="BuildingBase">
 		<defName>ShildGenerator</defName>
 		<label>Shild Generator</label>
