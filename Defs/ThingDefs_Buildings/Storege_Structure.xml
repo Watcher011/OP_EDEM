@@ -2,111 +2,101 @@
 
 <Defs>
 
-	<TipSetDef>
-		<defName>BioWasteConteiner_Tips</defName>
-		<tips>
-			<li>Biomedical waste or hospital waste is any kind of waste containing infectious (or potentially infectious) materials.[1] It may also include waste associated with the generation of biomedical waste that visually appears to be of medical or laboratory origin.</li>
-		</tips>
-	</TipSetDef>
+	
+	
+	
+	<ThingDef Name="ShelfBaseToxic" ParentName="FurnitureWithQualityBase" Abstract="True">
+    <thingClass>Building_Storage</thingClass>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <pathCost>250</pathCost>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <statBases>
+      <Flammability>1.0</Flammability>
+      <Beauty>0.5</Beauty>
+    </statBases>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <maxItemsInCell>300</maxItemsInCell>
+      <storageGroupTag>Shelf</storageGroupTag>
+      <blueprintClass>Blueprint_Storage</blueprintClass>
+    <fixedStorageSettings>
+         <filter>
+          <disallowNotEverStorable>true</disallowNotEverStorable>
+          <categories>
+            <li>Root</li>
+          </categories>
+          <disallowedCategories>
+            <li>Chunks</li>
+            <li>Plants</li>
+            <li>Buildings</li>
+			  <li>Foods</li>
+            <li>Manufactured</li>
+            <li>ResourcesRaw</li>
+            <li>Weapons</li>
+            <li>Apparel</li>
+            <li>BodyParts</li>
+          </disallowedCategories>
+          <specialFiltersToDisallow>
+            <li>AllowLargeCorpses</li>
+          </specialFiltersToDisallow>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Preferred</priority>
+        <filter>
+          <categories>
+          <li>Items</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+      <paintable>true</paintable>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationHotKey>Misc12</designationHotKey>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Styleable" />
+    </comps>
+  </ThingDef>
 
-	<ThingDef ParentName="BuildingBase" Name="BioConteiner_Base" Abstract="True">
-		<thingClass>Building</thingClass>
-		<category>Building</category>
-		<blockLight>true</blockLight>
-		<altitudeLayer>Building</altitudeLayer>
-		<pathCost>150</pathCost>
-		<passability>Impassable</passability>
-		<fillPercent>0.60</fillPercent>
-		<coversFloor>false</coversFloor>
-		<holdsRoof>true</holdsRoof>
-		<castEdgeShadows>true</castEdgeShadows>
-		<tickerType>Normal</tickerType>    
-		<canOverlapZones>false</canOverlapZones>
-		<researchPrerequisites>
-			<li>Machining</li>
-		</researchPrerequisites>
-		<pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>	
-		<resourcesFractionWhenDeconstructed>1.00</resourcesFractionWhenDeconstructed>
-		<building>
-			<allowAutoroof>false</allowAutoroof>
-			<ai_chillDestination>false</ai_chillDestination>
-			<expandHomeArea>false</expandHomeArea>	
-			<isInert>true</isInert>
-		</building>
-		<statBases>
-			<MarketValue>0</MarketValue>
-			<Beauty>-200</Beauty>
-			<Flammability>0.25</Flammability>
-		</statBases>
-		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
-		<rotatable>true</rotatable>
-		<selectable>true</selectable>
-		<neverMultiSelect>true</neverMultiSelect>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-		<designationCategory>Misc</designationCategory>
-		<repairEffect>ConstructMetal</repairEffect>
-	</ThingDef>	
-
-	<ThingDef ParentName="BioConteiner_Base">
-		<defName>CargoContainerWaste</defName>
-		<label>Контейнер для токсичных отходов</label>
-		<description>Контейнер высокого давления, который может безопасно хранить большое количество токсичных отходов и из-за чего они разлагаются довольно медленно ... Нет ... Хранить внутри все равно небезопасно. если вы не обращались с ними хорошо, он легко превратится в гигантскую токсичную бомбу.</description>
-		<graphicData>
-			<texPath>Things/Building/ToxicBar_north</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
+  <ThingDef ParentName="ShelfBaseToxic">
+    <defName>ShelfTox</defName>
+    <label>Контейнер для токсичных отходов</label>
+    <description>Контейнер высокого давления, который может безопасно хранить большое количество токсичных отходов и из-за чего они разлагаются довольно медленно ... Нет ... Хранить внутри все равно небезопасно. если вы не обращались с ними хорошо, он легко превратится в гигантскую токсичную бомбу.</description>
+    <graphicData>
+     <texPath>Things/Building/ToxicBar</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4.3,3.3)</drawSize>
-		</graphicData>
-		<rotatable>false</rotatable>
-		<costList>
-			<Steel>260</Steel>
-		</costList>
-		<size>(4,3)</size>
-		<statBases>
-			<MaxHitPoints>500</MaxHitPoints>
-			<WorkToBuild>2000</WorkToBuild>
-		</statBases>
-		
-		<comps>
-		  <li Class="CompProperties_GasOnDamage">
-			<type>ToxGas</type>
-			<damageFactor>6</damageFactor>
-			<useStackCountAsFactor>true</useStackCountAsFactor>
-		  </li>
-		  
-		  <li Class="CompProperties_Refuelable">
-			<fuelConsumptionRate>0.1</fuelConsumptionRate>
-			<fuelCapacity>200.0</fuelCapacity>
-			<fuelFilter>
-			  <thingDefs>
-				<li>Wastepack</li>
-			  </thingDefs>
-			</fuelFilter>
-			<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
-		  </li>
-		  <li Class="CompProperties_Explosive">
-			<explosiveRadius>0</explosiveRadius>
-			<explosiveExpandPerFuel>0.75</explosiveExpandPerFuel>
-			<explosiveDamageType>Flame</explosiveDamageType>
-			<destroyThingOnExplosionSize>0</destroyThingOnExplosionSize>
-			<startWickHitPointsPercent>0.5</startWickHitPointsPercent>
-			<preExplosionSpawnThingDef>Wastepack</preExplosionSpawnThingDef>
-			<preExplosionSpawnChance>0.5</preExplosionSpawnChance>
-			<wickTicks>150~300</wickTicks>
-			</li>
-		  <li>
-			<compClass>CompDissolutionEffect_Goodwill</compClass>
-		  </li>
-		</comps>
-		 <researchPrerequisites>
+    </graphicData>
+	<rotatable>true</rotatable>
+    <costStuffCount>320</costStuffCount>
+	  <neverMultiSelect>true</neverMultiSelect>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints> 
+      <Mass>800</Mass>
+      <WorkToBuild>500</WorkToBuild>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+    </statBases>
+    <size>(4,3)</size>
+    <designationHotKey>Misc12</designationHotKey>
+	<researchPrerequisites>
       <li>ToxifierGenerator</li>
     </researchPrerequisites>
-	</ThingDef>	
-	
-	
-	
-	
-	
-	
-	
+  </ThingDef>
 	
 </Defs>	
