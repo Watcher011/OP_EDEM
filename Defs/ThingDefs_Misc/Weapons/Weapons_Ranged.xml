@@ -26,9 +26,9 @@
       <RangedWeapon_Cooldown>0.93</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>40</Steel>
-      <ComponentIndustrial>1</ComponentIndustrial>
-      <WoodLog>10</WoodLog>
+      <Steel>240</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <WoodLog>1</WoodLog>
     </costList>
     <weaponTags>
       <li>PlasmaHeavy</li>
