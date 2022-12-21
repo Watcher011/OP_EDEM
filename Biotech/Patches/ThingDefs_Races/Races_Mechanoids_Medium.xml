@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- ========== Adjust combatPower ========== -->
+
+	<!-- ========== Loadouts ========== -->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Combat Extended</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+		
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/PawnKindDef[defName="Mech_Servitor_plasma"]</xpath>
+		<value>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>10</min>
+					<max>12</max>
+				</primaryMagazineCount>
+			</li>
+		</value>
+	</Operation>
+
+ 
+  <Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="Mech_Servitor_plasma"]/statBases</xpath>
+		<value>
+			<CarryWeight>50</CarryWeight>
+			<CarryBulk>20</CarryBulk>
+			<MeleeDodgeChance>0</MeleeDodgeChance>
+			<MeleeCritChance>0.01</MeleeCritChance>
+			<MeleeParryChance>0</MeleeParryChance>
+			<ReloadSpeed>1.25</ReloadSpeed>
+		</value>
+	</Operation>
+	<!-- ========== Legionary & Tesseron ========== -->
+
+
+</Patch>

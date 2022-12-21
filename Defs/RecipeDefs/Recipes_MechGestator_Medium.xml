@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef Name="MediumMechanoidRecipe" ParentName="BaseMechanoidRecipe" Abstract="True">
+    <gestationCycles>2</gestationCycles>
+    <researchPrerequisite>StandardMechtech</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>PlasmaServetor</defName>
+    <label>Сборка Катафрона-уничтожителя</label>
+    <description>«Стена базилики поддалась и рухнула, точно оползень. Оттуда выбрался гигантский зверь, понизу через крошево древних кирпичей хлынули плотные стаи тиранидов помельче. Когнис-оружие клады уничтожителей Во-9-Ромбуса отреагировало быстрее самих сервиторов: тут же повернулось и изрыгнуло густые сполохи прометия в несущиеся вперёд живые орудия. Как один, клада Во-9-Ромбуса повернулась и медленно подала назад; вялые, безучастные лица трёх сервиторов остались такими же, словно клада ещё находилась в пути к зоне боевых действий. Веретенообразные серворуки когнис-огнемётов проворно отсоединили опустевшие баки и заменили на новые, не теряя ни микросекунды. Тираниды бросились вперёд, молотя воздух лапами-клинками, их тут же накрыл новый шквал огня. Гигантский организм-разрушитель ринулся сквозь пламя со скрежещущим рёвом; похожие на крабьи, клешни смяли левого сервитора, выбросив сноп искр и струи вонючей крови. Из нефа позади клады раздалось монотонное пение, прекрасная акустика базилики разнесла бинарный боевой кант. Два оставшихся катафрона содрогнулись, словно в экстазе, затем навели гравитонные пушки на чудище, словно плуг, прущее через скамьи в сторону их хозяина. Тиранидская тварь заверещала: её панцирь треснул сразу в сотне мест, – а затем лопнула, словно насекомое, раздавленное железной пятой Омниссии.».</description>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>ServitorPak</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreRegular</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <Mech_Servitor_plasma>1</Mech_Servitor_plasma>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Mech_Servitor_plasma</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+   <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>BrainMeh</defName>
+    <label>РобоМозг</label>
+    <description>Ваш любимый колонист/пленник/раб неизлечимо болен ? Вы испытываете к нему сильную привязанность ? Смерть это только временно! Используйте знания для создания РобоМозга ! Маленький шустрый помощник для вашей колонии со знакомой личностью(В зависимости от настроек мозг можно заставить страдать ,что превратит его существование в ад).</description>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>Brain</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <products>
+      <Mech_Brain>1</Mech_Brain>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Mech_Brain</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef> 
+
+</Defs>

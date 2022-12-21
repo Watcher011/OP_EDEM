@@ -95,6 +95,125 @@
   </ThingDef>
  
  
- 
+  <ThingDef ParentName="MechGestatorBase">
+    <defName>LargeMechGestator</defName>
+    <label>large mech gestator</label>
+    <description>A tank of mechanite-rich fluid with support tubes for feeding in materials and nutrients. Mechanitors can use it to produce new mechanoids or to resurrect dead mechanoids. This tier of mech gestator is capable of generating medium, heavy, and ultraheavy mechs.\n\nThe process uses harsh chemicals which are stored in toxic wastepacks. Haulers must remove the wastepacks from time to time.</description>
+    <graphicData>
+      <texPath>Things/Building/Production/MechGestatorLarge</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(6, 5)</drawSize>
+      <shadowData>
+        <volume>(3.8, 3, 2.7)</volume>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/Building/Production/MechGestatorLarge_MenuIcon</uiIconPath>
+    <uiIconScale>1.5</uiIconScale>
+    <interactionCellOffset>(2,0,2)</interactionCellOffset>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToBuild>16000</WorkToBuild>
+      <Mass>35</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <size>(4,3)</size>
+    <costList>
+      <Steel>300</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>StandardMechtech</li>
+    </researchPrerequisites>
+    <building>
+      <barDrawData>
+        <north>
+          <preRotationOffset>(-1.515, 1.196)</preRotationOffset>
+          <size>(0.629, 0.069)</size>
+        </north>
+        <south>
+          <preRotationOffset>(-1.51, 1.143)</preRotationOffset>
+          <size>(0.654, 0.076)</size>
+        </south>
+        <east>
+          <preRotationOffset>(1.498,-1.210)</preRotationOffset>
+          <size>(0.663, 0.069)</size>
+        </east>
+        <west>
+          <preRotationOffset>(-1.491,-1.196)</preRotationOffset>
+          <size>(0.646, 0.075)</size>
+        </west>
+      </barDrawData>
+      <formingGraphicData>
+        <texPath>Things/Pawn/Mechanoid/HalfGestatedMechLarge</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(1.65,1.65)</drawSize>
+      </formingGraphicData>
+      <formingMechBobSpeed>0.0005</formingMechBobSpeed>
+      <formingMechYBobDistance>0.08</formingMechYBobDistance>
+      <formingMechPerRotationOffset>
+        <li>(0, 0, 0.225)</li>
+        <li>(-0.15, 0, 0.225)</li>
+        <li>(0, 0, 0.225)</li>
+        <li>(0.15, 0, 0.225)</li>
+      </formingMechPerRotationOffset>
+      <mechGestatorCylinderGraphic>
+        <texPath>Things/Building/Production/MechGestatorLargeGlass</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(6, 5)</drawSize>
+        <shaderType>Transparent</shaderType>
+      </mechGestatorCylinderGraphic>
+      <mechGestatorTopGraphic>
+        <texPath>Things/Building/Production/MechGestatorLargeTop</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(6, 5)</drawSize>
+      </mechGestatorTopGraphic>
+      <gestatorFormingMote>
+        <north>MechGestatorFormingLarge_North</north>
+        <east>MechGestatorFormingLarge_East</east>
+        <west>MechGestatorFormingLarge_West</west>
+        <south>MechGestatorFormingLarge_South</south>
+      </gestatorFormingMote>
+      <gestatorCycleCompleteMote>
+        <north>MechGestatorCycleCompleteLarge_North</north>
+        <east>MechGestatorCycleCompleteLarge_East</east>
+        <west>MechGestatorCycleCompleteLarge_West</west>
+        <south>MechGestatorCycleCompleteLarge_South</south>
+      </gestatorCycleCompleteMote>
+      <gestatorFormedMote>
+        <north>MechGestatorFormedLarge_North</north>
+        <east>MechGestatorFormedLarge_East</east>
+        <west>MechGestatorFormedLarge_West</west>
+        <south>MechGestatorFormedLarge_South</south>
+      </gestatorFormedMote>
+    </building>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <recipes>
+      <li>Pikeman</li>
+	  <li>BrainMeh</li>
+      <li>Scorcher</li>
+      <li>Scyther</li>
+      <li>Tunneler</li>
+      <li>Lancer</li>
+	  <li>PlasmaServetor</li>
+      <li>Tesseron</li>
+      <li>Legionary</li>
+      <li>CentipedeGunner</li>
+      <li>CentipedeBurner</li>
+      <li>CentipedeBlaster</li>
+      <li>Diabolus</li>
+      <li>Centurion</li>
+      <li>Warqueen</li>
+      <li>ResurrectMediumMech</li>
+      <li>ResurrectHeavyMech</li>
+      <li>ResurrectUltraheavyMech</li>
+    </recipes>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>500</basePowerConsumption>
+        <idlePowerDraw>50</idlePowerDraw>
+      </li>
+    </comps>
+  </ThingDef>
  
 </Defs>

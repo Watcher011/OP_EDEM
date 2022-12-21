@@ -144,4 +144,94 @@
     </researchPrerequisites>
   </RecipeDef>
 
+<RecipeDef>
+    <defName>MakeToxinAmmo</defName>
+    <label>make ToxinAmmo x100</label>
+    <description>Craft 100 Toxin Ammo.</description>
+    <jobString>Making Toxin Ammo.</jobString>
+    <researchPrerequisite>Machining</researchPrerequisite>
+    <workAmount>3600</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FSX</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Wastepack</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>FSX</li>
+        <li>Wastepack</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_Toxic_Sabot>100</Ammo_Toxic_Sabot>
+    </products>
+  </RecipeDef>
+
+	<RecipeDef>
+		<defName>MakeAmmo_PlasmaCellUltraHeavy</defName>
+		<label>Создать боеприпас для тяж плазменного оружия(75шт).</label>
+		<description>Плазменная ячейка — боеприпас к огнестрельному стрелковому оружию.</description>
+		<jobString>Создаёт боеприпас для тяж плазменного оружия.</jobString>
+		<workAmount>6800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>yadaritRaW</li>
+					</thingDefs>
+				</filter>
+				<count>9</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>yadaritRaW</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_PlasmaUltraHeavy>75</Ammo_PlasmaUltraHeavy>
+		</products>
+	</RecipeDef>
+
+
 </Defs>

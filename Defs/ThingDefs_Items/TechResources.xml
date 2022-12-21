@@ -121,7 +121,7 @@
 		<graphicData>
 			<texPath>Things/Building/Turrets/ServitorPak</texPath>
 		    <graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(2.5,2.3)</drawSize>
+			<drawSize>(1,2)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<size>(1,2)</size>

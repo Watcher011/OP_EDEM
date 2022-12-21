@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <!-- Apocriton -->
+  <ThingDef ParentName="BaseMechanoidWalker">
+    <defName>Mech_Servitor_plasma</defName>
+    <label>Катафроны-уничтожители</label>
+    <description>Киборгизированные ужасы, известные как «катафроны-уничтожители», существуют исключительно ради убийства. Нет, пожалуй, более благочестивого призвания во всей Галактике, нежели стать живым орудием, к тому же свободным от груза этики и даже мыслей. По большому счёту, все сервиторы – просто инструмент в руках других, и катафроны – не исключение. Когда этими боевыми сервиторами командует адепт Машинного бога, они становятся олицетворением разрушения. Тогда как у стандартного катафрона-прорывника есть хотя бы одна, похожая на клешню, рука, обе верхние конечности уничтожителя заменены высокомощным оружием. С одного бока ему ставят пушку продвинутой конструкции, варьируемую от тяжёлого фосфорного бластера – орудия, которое стреляет раскалёнными добела шарами фосфора, прилипающими к цели, при этом продолжая гореть, – до плазменной кулеврины – пушки настолько разрушительной, что пока цель обращается в расплавленную лужу, кожа самого сервитора успевает обгореть. Но, пожалуй, наиболее внушающим страх орудием уничтожителя служит тяжёлая гравипушка – орудие, которое за секунду способно смять в тонккий слой отходов даже эльдарский шагоход из призрачной кости. Возможности катафронов нести смерть на этом не заканчиваются, ибо с другой стороны торса уничтожители несут вспомогательную систему вооружения, которая может отбрасывать ближних врагов струями ревущего пламени или градом фосфорных снарядов. Тому, кто каким-то образом уцелел в этом испепеляющем потоке огня, лучше поскорее сбежать, ведь он окажется перемолот и смешан с грязью гусеницами этих орудий Машинного Бога.</description>
+    <statBases>
+      <MarketValue>1600</MarketValue>
+      <MoveSpeed>3.2</MoveSpeed>
+      <EnergyShieldRechargeRate>0.45</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>2.5</EnergyShieldEnergyMax>
+      <BandwidthCost>2</BandwidthCost>
+      <ControlTakingTime>18</ControlTakingTime>
+      <EMPResistance>0.95</EMPResistance>
+    </statBases>
+    <race>
+	     <mechEnabledWorkTypes>
+          <li>Cleaning</li>
+		   <li>Hauling</li>
+        </mechEnabledWorkTypes>
+      <body>Apocriton</body>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Apocriton_Wounded</soundWounded>
+          <soundAngry>Pawn_Mech_Apocriton_Call</soundAngry>
+          <soundDeath>Pawn_Mech_Apocriton_Death</soundDeath>
+          <soundCall>Pawn_Mech_Apocriton_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Apocriton_Wounded</soundWounded>
+          <soundAngry>Pawn_Mech_Apocriton_Call</soundAngry>
+          <soundDeath>Pawn_Mech_Apocriton_Death</soundDeath>
+          <soundCall>Pawn_Mech_Apocriton_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <baseHealthScale>3.3</baseHealthScale>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <soundAmbience>Pawn_Mech_Apocriton_Ambience</soundAmbience>
+    </race>
+    <tools>
+      <li>
+        <label>Пушка</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <killedLeavingsPlayerHostile>
+	  <ServitorPak>1</ServitorPak>
+      <NanostructuringChip>1</NanostructuringChip>
+    </killedLeavingsPlayerHostile>
+    <comps>
+
+    </comps>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>Mech_Servitor_plasma</defName>
+    <label>Катафроны-Уничтожители</label>
+    <race>Mech_Servitor_plasma</race>
+    <combatPower>600</combatPower>
+    <maxPerGroup>3</maxPerGroup>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/servitormort</texPath>
+         
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/servitormort</texPath>
+          
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>PlasmaHeavy</li>
+    </weaponTags>
+	 <modExtensions>
+	  <li Class="CombatExtended.ProjectileChangeExt">
+                <additionalEquipment>
+                    <li>
+                        <projectile>Bullet_PlasmaUltraHeavy</projectile>
+                        <chanceToUse>0.05</chanceToUse>
+                        <burstCount>1</burstCount>
+                        <uses>2</uses>
+                    </li>
+                </additionalEquipment>
+            </li>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <primaryMagazineCount>
+                    <min>4</min>
+                    <max>5</max>
+                </primaryMagazineCount>
+            </li>
+        </modExtensions>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+    <skipResistant>true</skipResistant>
+	
+  </PawnKindDef>
+  
+
+
+
+ <ThingDef ParentName="BaseMechanoidWalker">
+    <defName>Mech_Brain</defName>
+    <label>РобоМозг</label>
+    <description>Многоцелевой кибернетический организм, в котором вместо процессора используется мозг человека или шимпанзе. Создан для военных и гражданских целей до Великой войны компанией «Римворлд Атомикс Интернешнл». Превосходит большинство других роботов, так как органический мозг предоставляет ему более широкий спектр функций по сравнению с другими роботами.</description>
+    <statBases>
+      <MarketValue>1600</MarketValue>
+      <MoveSpeed>4.2</MoveSpeed>
+      <EnergyShieldRechargeRate>0.45</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>2.5</EnergyShieldEnergyMax>
+      <BandwidthCost>1</BandwidthCost>
+      <ControlTakingTime>18</ControlTakingTime>
+      <EMPResistance>0.95</EMPResistance>
+    </statBases>
+    <race>
+	     <mechEnabledWorkTypes>
+          <li>Cleaning</li>
+		   <li>Hauling</li>
+		    <li>Crafting</li>
+          <li>Smithing</li>
+          <li>Tailoring</li>
+          <li>Cooking</li>
+        </mechEnabledWorkTypes>
+      <body>Apocriton</body>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Apocriton_Wounded</soundWounded>
+          <soundAngry>Pawn_Mech_Apocriton_Call</soundAngry>
+          <soundDeath>Pawn_Mech_Apocriton_Death</soundDeath>
+          <soundCall>Pawn_Mech_Apocriton_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Apocriton_Wounded</soundWounded>
+          <soundAngry>Pawn_Mech_Apocriton_Call</soundAngry>
+          <soundDeath>Pawn_Mech_Apocriton_Death</soundDeath>
+          <soundCall>Pawn_Mech_Apocriton_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <baseHealthScale>3.3</baseHealthScale>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <soundAmbience>Pawn_Mech_Apocriton_Ambience</soundAmbience>
+    </race>
+    <tools>
+      <li>
+        <label>Клешня</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>3.6</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <killedLeavingsPlayerHostile>
+      <NanostructuringChip>1</NanostructuringChip>
+    </killedLeavingsPlayerHostile>
+    <comps>
+
+    </comps>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>Mech_Brain</defName>
+    <label>РобоМозг</label>
+    <race>Mech_Brain</race>
+    <combatPower>300</combatPower>
+    <maxPerGroup>3</maxPerGroup>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Brainmeh</texPath>
+         
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Brainmeh</texPath>
+          
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>Autopistol</li>
+    </weaponTags>
+	 <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <primaryMagazineCount>
+                    <min>4</min>
+                    <max>5</max>
+                </primaryMagazineCount>
+            </li>
+        </modExtensions>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+    <skipResistant>true</skipResistant>
+	
+  </PawnKindDef>
+  
+</Defs>

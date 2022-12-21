@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <!-- ==================== Grenade Launcher ==================== -->
+
+  <ThingDef ParentName="BaseMakeableGun">
+    <defName>HeviPlasma</defName>
+    <label>Тяжелая плазменная установка</label>
+    <description>Плазменные пушки — самый большой вид известного в Империуме портативного плазменного оружия. Вместо того, чтобы использовать стандартные топливные капсулы, владелец подобного оружия должен носить большую канистру с водородным топливом, которая обычно содержится в заплечном ранце. Плазменные пушки имеют большую дальность стрельбы и больший боекомплект, чем стандартные плазменные винтовки; их наполненные звёздной яростью заряды мчатся над полем боя, как миниатюрные солнца, нанося огромный урон по площади в момент попадания в цель. Плазменные пушки также могут стрелять в усиленном режиме, расходуя больше топлива, чтобы ещё больше увеличить мощность плазменных зарядов для уничтожения даже самых живучих и бронированных противников. Однако, как и всё имперское плазменное оружие, они склонны к перегреву и могут оказаться столь же смертоносными для своих владельцев, как и для целей..</description>
+    <graphicData>
+      <texPath>Things/Item/HPW</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(1.8,0.8)</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <SightsEfficiency>1</SightsEfficiency>
+      <ShotSpread>0.16</ShotSpread>
+      <SwayFactor>1.00</SwayFactor>
+      <Bulk>7.31</Bulk>
+      <Mass>8.70</Mass>
+      <RangedWeapon_Cooldown>0.93</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <weaponTags>
+      <li>PlasmaHeavy</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>3.28</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_PlasmaUltraHeavy</defaultProjectile>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>0.7</warmupTime>
+        <range>44</range>
+        <minRange>5</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>300</magazineSize>
+        <reloadTime>20.2</reloadTime>
+        <ammoSet>AmmoSet_PlasmaUltraHeavy</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>SuppressFire</aiAimMode>
+      </li>
+    </comps>
+	
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+	 <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.6,0.8</DrawSize>
+        <DrawOffset>0.0,0.0</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+   <!-- ==================== M72 LAW ==================== -->
+
+
+</Defs>

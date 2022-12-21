@@ -27,7 +27,7 @@
 		<statBases>
 			<Mass>0.134</Mass>
 			<Bulk>0.51</Bulk>
-			<MarketValue>2.52</MarketValue>
+			<MarketValue>0.52</MarketValue>
 		</statBases>
 		<tradeTags>
 			<li>CE_AutoEnableTrade</li>
@@ -48,7 +48,7 @@
 			  <li Class="CombatExtended.CompProperties_ExplosiveCE">
 				<damageAmountBase>85</damageAmountBase>
 				<explosiveDamageType>PlasmaF</explosiveDamageType>
-				<explosiveRadius>8.5</explosiveRadius>
+				<explosiveRadius>3.5</explosiveRadius>
 				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 			  </li>
 			<li Class="CombatExtended.CompProperties_Fragments">
@@ -73,7 +73,7 @@
 			<speed>80</speed>
 			<damageDef>PlasmaF</damageDef>
 			<damageAmountBase>25</damageAmountBase>
-			<explosionRadius>8</explosionRadius>
+			<explosionRadius>3</explosionRadius>
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 			<preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
             <preExplosionSpawnChance>0.85</preExplosionSpawnChance>
@@ -89,48 +89,6 @@
 
 	<!-- ==================== Recipes ========================== -->
 
-	<RecipeDef ParentName="ChargeAmmoRecipeBase">
-		<defName>MakeAmmo_PlasmaCellUltraHeavy</defName>
-		<label>make Plasma Heavy Power Cells</label>
-		<description>Craft  of Plasma Heavy Power Cells.</description>
-		<jobString>Making Plasma ultra Heavy Power Cells.</jobString>
-		<workAmount>6800</workAmount>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Steel</li>
-					</thingDefs>
-				</filter>
-				<count>10</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>yadaritRaW</li>
-					</thingDefs>
-				</filter>
-				<count>9</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>ComponentIndustrial</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>Steel</li>
-				<li>yadaritRaW</li>
-				<li>ComponentIndustrial</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<products>
-			<Ammo_PlasmaUltraHeavy>75</Ammo_PlasmaUltraHeavy>
-		</products>
-	</RecipeDef>
+	
 
 </Defs>

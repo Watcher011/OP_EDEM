@@ -10,7 +10,7 @@
 Черви способны к общению со своей жертвой из-за частичного захвата мозга и центра мыслительных процессов. Центральное командование запретило налаживать контакт с мозговыми червями под угрозой увольнения.</description>
     <makesSickThought>true</makesSickThought>
     <lethalSeverity>1</lethalSeverity>
-    <tendable>false</tendable>
+    <tendable>true</tendable>
     <comps>
       <li Class="HediffCompProperties_TendDuration">
         <baseTendDurationHours>12</baseTendDurationHours>
