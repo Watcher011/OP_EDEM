@@ -6,19 +6,19 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>AncientPowerModul</defName>
-    <label>Старый генератор</label>
+    <label>Судовой старый генератор</label>
     <description>Очень старый генератор,что работет с сбоями .</description>
     <rotatable>false</rotatable>
     <graphicData>
       <texPath>Things/Building/PowerEngineBlock</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(3,1)</drawSize>
+      <drawSize>(3,1.5)</drawSize>
       <shadowData>
         <volume>(0.3, 0.2, 0.3)</volume>
         <offset>(0,0,-0.1)</offset>
       </shadowData>
     </graphicData>
-    <size>(3,1)</size>
+    <size>(3,2)</size>
     <fillPercent>0.3</fillPercent>
     <altitudeLayer>Building</altitudeLayer>
 	 <tickerType>Normal</tickerType>

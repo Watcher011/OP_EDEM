@@ -155,7 +155,7 @@
                 </targetParams>
                 <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
                 <burstShotCount>10</burstShotCount>
-                <soundCast>ShotAK47</soundCast>
+                <soundCast>guten-tag</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
@@ -206,10 +206,10 @@
 				<targetParams>
                     <canTargetLocations>true</canTargetLocations>
                 </targetParams>
-                <ticksBetweenBurstShots>90</ticksBetweenBurstShots>
+                <ticksBetweenBurstShots>190</ticksBetweenBurstShots>
                 <burstShotCount>3</burstShotCount>
-                <soundCast>ShotAK47</soundCast>
-                <soundCastTail>GunTail_Medium</soundCastTail>
+                <soundCast>HeavyLaunch</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
 		</verbs>

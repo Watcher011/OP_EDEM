@@ -60,7 +60,7 @@
     </descriptionHyperlinks>
   </RecipeDef>
 
-   <RecipeDef ParentName="MediumMechanoidRecipe">
+   <RecipeDef ParentName="LightMechanoidRecipe">
     <defName>BrainMeh</defName>
     <label>РобоМозг</label>
     <description>Ваш любимый колонист/пленник/раб неизлечимо болен ? Вы испытываете к нему сильную привязанность ? Смерть это только временно! Используйте знания для создания РобоМозга ! Маленький шустрый помощник для вашей колонии со знакомой личностью(В зависимости от настроек мозг можно заставить страдать ,что превратит его существование в ад).</description>
@@ -81,6 +81,7 @@
         </filter>
         <count>5</count>
       </li>
+
 	  <li>
         <filter>
           <thingDefs>
@@ -106,4 +107,61 @@
     </descriptionHyperlinks>
   </RecipeDef> 
 
+
+
+
+
+ <RecipeDef ParentName="LightMechanoidRecipe">
+    <defName>ServoMeh</defName>
+    <label>Серво-череп</label>
+    <description>Сервочереп — робототехническое устройство, похожее на беспилотный аппарат, созданный из человеческого черепа, снабжённый электронными или кибернетическими компонентами, которые управляют встроенными антигравитационными генераторами, что позволяет сервочерепу самостоятельно парить и передвигаться в пространстве. Они создаются из черепов преданных слуг Империума, позволяя тем самым служить и после своей смерти. Быть выбранным для модификации сервочерепа в Империуме считается большой честью, так как доказывает, что служба адепта при жизни была достаточно усердна для продолжения её после смерти.</description>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreBasic</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>Skull</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <products>
+      <Mech_ServoScul>1</Mech_ServoScul>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Mech_ServoScul</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef> 
 </Defs>
