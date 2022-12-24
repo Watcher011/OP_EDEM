@@ -53,6 +53,7 @@
 		<li>MakeComponentIndustrialFromYadarit</li>
 		<li>MakeAmmo_PlasmaCellUltraHeavy</li>
 		<li>MakeToxinAmmo</li>
+		 <li>MakeTRAmmo</li>
     </recipes>
 	<tickerType>Normal</tickerType>
     <inspectorTabs>

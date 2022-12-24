@@ -28,6 +28,8 @@
       <Beauty>-20</Beauty>
       <MaxHitPoints>250</MaxHitPoints>
       <WorkToBuild>2000</WorkToBuild>
+	  <Bulk>55</Bulk>
+	  <Mass>300</Mass> 
     </statBases>
 	<comps>
       <li Class="CompProperties_Power">

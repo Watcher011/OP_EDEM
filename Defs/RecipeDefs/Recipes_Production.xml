@@ -189,6 +189,46 @@
     </products>
   </RecipeDef>
 
+
+
+
+<RecipeDef>
+    <defName>MakeTRAmmo</defName>
+    <label>Сделать x100 Транквилизаторов</label>
+    <description>Начинить 100 игл быстродействующим седативным средством</description>
+    <jobString>Создаёт транквилизаторы.</jobString>
+    <researchPrerequisite>Machining</researchPrerequisite>
+    <workAmount>3600</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineHerbal</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>MedicineHerbal</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_neiro_Sabot>100</Ammo_neiro_Sabot>
+    </products>
+  </RecipeDef>
+
+
 	<RecipeDef>
 		<defName>MakeAmmo_PlasmaCellUltraHeavy</defName>
 		<label>Создать боеприпас для тяж плазменного оружия(75шт).</label>
