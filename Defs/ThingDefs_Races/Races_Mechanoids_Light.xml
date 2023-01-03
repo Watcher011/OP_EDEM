@@ -153,13 +153,12 @@
     <defName>Mech_Brain</defName>
     <label>РобоМозг</label>
     <race>Mech_Brain</race>
-    <combatPower>300</combatPower>
+	<combatPower>100</combatPower>
     <maxPerGroup>3</maxPerGroup>
     <lifeStages>
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Mechanoid/Brainmeh</texPath>
-         
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1</drawSize>
         </bodyGraphicData>
@@ -167,7 +166,6 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Mechanoid/Brainmeh</texPath>
-          
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1</drawSize>
         </bodyGraphicData>
