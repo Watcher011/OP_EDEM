@@ -58,13 +58,23 @@
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
       </li>
     </tools>
+	<comps>
+      <li Class="CompProperties_MechCarrier">
+        <spawnPawnKind>Mech_WarBomb</spawnPawnKind>
+        <fixedIngredient>Steel</fixedIngredient>
+        <costPerPawn>10</costPerPawn>
+        <startingIngredientCount>60</startingIngredientCount>
+        <maxIngredientCount>60</maxIngredientCount>
+        <spawnEffecter>WarqueenWarUrchinsSpawned</spawnEffecter>
+        <spawnedMechEffecter>WarUrchinSpawned</spawnedMechEffecter>
+        <attachSpawnedEffecter>true</attachSpawnedEffecter>
+        <attachSpawnedMechEffecter>true</attachSpawnedMechEffecter>
+      </li>
+    </comps>
     <killedLeavingsPlayerHostile>
 	  <ServitorPak>1</ServitorPak>
       <NanostructuringChip>1</NanostructuringChip>
     </killedLeavingsPlayerHostile>
-    <comps>
-
-    </comps>
   </ThingDef>
   
   <PawnKindDef ParentName="BaseMechanoidKind">

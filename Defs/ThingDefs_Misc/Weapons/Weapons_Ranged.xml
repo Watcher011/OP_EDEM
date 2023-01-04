@@ -53,7 +53,7 @@
     </verbs>
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>300</magazineSize>
+        <magazineSize>30</magazineSize>
         <reloadTime>20.2</reloadTime>
         <ammoSet>AmmoSet_PlasmaUltraHeavy</ammoSet>
       </li>
