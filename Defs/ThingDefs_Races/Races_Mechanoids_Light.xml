@@ -3,7 +3,14 @@
   <ThingDef ParentName="LightMechanoid">
       <defName>Mech_WarBomb</defName>
       <label>Крикун</label>
-      <description>Найти и уничтожить</description>
+      <description>В каждом маленьком #[ДАННЫЕ ЗАСЕКРЕЧЕНЫ]#
+И в #[ДАННЫЕ ЗАСЕКРЕЧЕНЫ]# и в #[ДАННЫЕ ЗАСЕКРЕЧЕНЫ]#
+Есть по двести грамм взрывчатки
+Или даже полкило!
+Должен он бежать и прыгать
+Все кромсать, пилою дрыгать
+А иначе он взорвется, трах-бабах!
+И нет его!</description>
       <statBases>
         <MoveSpeed>6.2</MoveSpeed>
       </statBases>
@@ -61,7 +68,7 @@
         </li>
 		      <li Class="CompProperties_Explosive">
         <wickTicks>0</wickTicks>
-        <explosiveRadius>5.9</explosiveRadius>
+        <explosiveRadius>2.9</explosiveRadius>
         <explodeOnKilled>true</explodeOnKilled>
         <explosiveDamageType>BombSuper</explosiveDamageType>
         <propagationSpeed>0.5</propagationSpeed>
