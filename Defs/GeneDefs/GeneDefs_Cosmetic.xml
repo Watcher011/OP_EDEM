@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- Hair restrictions -->
-
-
-  <!-- ============= Skin color overrides ============== --> 
-
-  <GeneDef Name="GeneSkinColorOverride" Abstract="True">
-    <biostatCpx>0</biostatCpx>
-    <displayCategory>Cosmetic_Skin</displayCategory>
-    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
-    <exclusionTags>
-      <li>SkinColorOverride</li>
-    </exclusionTags>
-    <randomBrightnessFactor>0.18</randomBrightnessFactor>
-  </GeneDef>
 
   <!-- Skin - exotic monochrome -->
 
@@ -84,7 +70,5 @@
 			<li>KarSpray</li>
     </abilities>
   </GeneDef>
-
- 
  
 </Defs>

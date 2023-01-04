@@ -56,12 +56,12 @@
 
  <ThingDef ParentName="ResourceBase">
 		 <defName>yadaritRaW</defName>
-        <label>yadaritrRaW</label>
-		  <description>Yadarite is a mysterious substance that has mystical properties and high scientific value 1.</description>
+        <label>Сырой ядарит</label>
+		  <description>Кристал сырого ядарита,крайне взрывоопасен.</description>
         <graphicData>
             <texPath>Things/Item/yadaritRaW</texPath>
 		    <graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(0.5)</drawSize>
+			<drawSize>(1.2)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<fillPercent>0.35</fillPercent>

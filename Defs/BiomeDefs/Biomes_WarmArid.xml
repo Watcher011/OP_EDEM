@@ -98,6 +98,7 @@
       <Donkey>0.2</Donkey>
       <GuineaPig>0.017</GuineaPig>
       <Horse>0.1</Horse>
+	   <GG>0.1</GG>
       <Bison>0.1</Bison>
       <Rat>1.3</Rat>
       <Hare>1.3</Hare>
@@ -230,6 +231,7 @@
       <Plant_PebbleCactus MayRequire="Ludeon.RimWorld.Biotech">1</Plant_PebbleCactus>
     </wildPlants>
     <wildAnimals>
+	 <GG>0.1</GG>
       <Donkey>0.15</Donkey>
       <GuineaPig>0.01</GuineaPig>
       <Iguana>1.2</Iguana>
@@ -341,6 +343,7 @@
       <Plant_PebbleCactus MayRequire="Ludeon.RimWorld.Biotech">1</Plant_PebbleCactus>
     </wildPlants>
     <wildAnimals>
+	 <GG>0.1</GG>
       <Donkey>0.20</Donkey>
       <GuineaPig>0.002</GuineaPig>
       <Iguana>1.5</Iguana>

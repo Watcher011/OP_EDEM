@@ -130,6 +130,7 @@
     </wildPlants>
     <wildAnimals>
       <GuineaPig>0.25</GuineaPig>
+	   <GG>0.1</GG>
       <Rat>1</Rat>
       <Monkey>1</Monkey>
       <Boomalope>0.5</Boomalope>
@@ -320,6 +321,7 @@
       <Alpaca>0.5</Alpaca>
       <Cobra>0.15</Cobra>
       <Panther>0.15</Panther>
+	   <GG>0.1</GG>
     </wildAnimals>
     <pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
       <Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.4</Toxalope>

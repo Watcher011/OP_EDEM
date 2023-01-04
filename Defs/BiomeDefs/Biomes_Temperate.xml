@@ -122,6 +122,7 @@
       <Plant_Witchwood MayRequire="Ludeon.RimWorld.Biotech">0.5</Plant_Witchwood>
     </wildPlants>
     <wildAnimals>
+	 <GG>0.1</GG>
       <Donkey>0.20</Donkey>
       <GuineaPig>0.45</GuineaPig>
       <Yak>0.06</Yak>
@@ -290,6 +291,7 @@
       <Plant_Witchwood MayRequire="Ludeon.RimWorld.Biotech">1.0</Plant_Witchwood>
     </wildPlants>
     <wildAnimals>
+	 <GG>0.1</GG>
       <GuineaPig>0.15</GuineaPig>
       <Yak>0.04</Yak>
       <Horse>0.20</Horse>
