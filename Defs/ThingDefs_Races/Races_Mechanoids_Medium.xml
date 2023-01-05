@@ -103,7 +103,7 @@
     </lifeStages>
     <weaponMoney>9999~9999</weaponMoney>
     <weaponTags>
-      <li>PlasmaHeavy</li>
+      <li>Minigun</li>
     </weaponTags>
 	 <modExtensions>
 	  <li Class="CombatExtended.ProjectileChangeExt">
